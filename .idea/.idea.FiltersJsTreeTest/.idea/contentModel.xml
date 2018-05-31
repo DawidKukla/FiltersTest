@@ -29,25 +29,7 @@
     <e p="C:\Users\Admin\Main\Comarch BI Point\Comarch.BI.Point.WEB\assets\plugins\sffjs\stringformat-1.10.js" t="Include" />
     <e p="C:\Users\Admin\RiderProjects\FiltersTest" t="IncludeFlat">
       <e p="FiltersJsTreeTest" t="IncludeRecursive">
-        <e p="_referencesTS" t="Include">
-          <e p="Areas" t="Include">
-            <e p="FilterControl" t="Include">
-              <e p="js" t="Include">
-                <e p="FilterStateManager" t="Include" />
-                <e p="Helpers" t="Include" />
-                <e p="Service" t="Include" />
-              </e>
-            </e>
-            <e p="Scripts" t="Include">
-              <e p="Comarch" t="Include" />
-              <e p="typings" t="Include">
-                <e p="jquery" t="Include" />
-                <e p="jstree" t="Include" />
-                <e p="linq" t="Include" />
-              </e>
-            </e>
-          </e>
-        </e>
+        <e p="AjaxHelper.js" t="Include" />
         <e p="AjaxHelper.ts" t="Include" />
         <e p="App_GlobalResources" t="Include">
           <e p="TestGlobal.designer.cs" t="Include" />

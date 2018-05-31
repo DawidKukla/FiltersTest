@@ -274,6 +274,7 @@
     <TypeScriptCompile Include="..\..\..\Main\Comarch BI Point\Comarch.BI.Point.WEB\assets\plugins\jstree\jstree.d.ts">
       <Link>Scripts\Comarch\jstree\jstree.d.ts</Link>
     </TypeScriptCompile>
+    <TypeScriptCompile Include="AjaxHelper.ts" />
     <TypeScriptCompile Include="FilterControl\JS\Common.ts" />
     <TypeScriptCompile Include="FilterControl\JS\FilterControlView.ts" />
     <TypeScriptCompile Include="FilterControl\JS\Helpers\IntersectionCalculator.ts" />

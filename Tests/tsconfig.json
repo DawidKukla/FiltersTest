@@ -12,9 +12,6 @@
     "removeComments": true,
     "inlineSourceMap": true,
     "inlineSources": true,
-    "rootDirs": [
-      "../",    // for authored sources
-      "." // for generated code
-    ]
+    
   }
 }

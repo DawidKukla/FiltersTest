@@ -1,5 +1,6 @@
-﻿///<reference path="../Tests/_TypeScriptReferences/Areas/RandomTreeGenerator.ts"/>
-///<reference path="../Tests/_TypeScriptReferences/Areas/RandomTreeGenerator.js"/>
+﻿
+///<reference path="./_TypeScriptReferences/Areas/RandomTreeGenerator.ts"/>
+
 import * as Mock from "typemoq";
 import RandomTreeGenerator=RandomTreeGeneratorModule.RandomTreeGenerator;
 
