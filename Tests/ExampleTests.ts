@@ -1,4 +1,7 @@
-﻿import * as Mock from "typemoq";
+﻿///<reference path="../Tests/_TypeScriptReferences/Areas/RandomTreeGenerator.ts"/>
+///<reference path="../Tests/_TypeScriptReferences/Areas/RandomTreeGenerator.js"/>
+import * as Mock from "typemoq";
+import RandomTreeGenerator=RandomTreeGeneratorModule.RandomTreeGenerator;
 
 export interface ITest{
     GetData():number;
@@ -18,7 +21,10 @@ describe("Test Suite", function () {
         mock.setup(x => x.GetData()).returns(() => 100);
         expect(mock.target.GetData()).toBe(100);
     });
-
+    
+    it("ReferenceExternal", function() {
+        var generator=new RandomTreeGenerator()
+    });
 
 });
 

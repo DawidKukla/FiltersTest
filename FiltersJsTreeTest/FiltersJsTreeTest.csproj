@@ -219,9 +219,6 @@
     <Content Include="Scripts\jstree\themes\default\style.min.css" />
     <Content Include="Scripts\jstree\themes\default\throbber.gif" />
     <Content Include="Scripts\linq.js" />
-    <Content Include="Scripts\typings\typemoq.d.ts" />
-    <Content Include="TestsHarness.html" />
-    <Content Include="Tests\ExampleTests.ts" />
     <Content Include="TextWidthJQueryPlugin.js" />
     <Content Include="Web.config" />
     <Content Include="Views\Default\TestTree.cshtml" />
@@ -277,7 +274,6 @@
     <TypeScriptCompile Include="..\..\..\Main\Comarch BI Point\Comarch.BI.Point.WEB\assets\plugins\jstree\jstree.d.ts">
       <Link>Scripts\Comarch\jstree\jstree.d.ts</Link>
     </TypeScriptCompile>
-    <TypeScriptCompile Include="AjaxHelper.ts" />
     <TypeScriptCompile Include="FilterControl\JS\Common.ts" />
     <TypeScriptCompile Include="FilterControl\JS\FilterControlView.ts" />
     <TypeScriptCompile Include="FilterControl\JS\Helpers\IntersectionCalculator.ts" />
@@ -324,6 +320,9 @@
       <Generator>GlobalResourceProxyGenerator</Generator>
       <LastGenOutput>TestGlobal.designer.cs</LastGenOutput>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Tests" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
