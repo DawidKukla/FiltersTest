@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Admin\.Rider2018.1\System\resharper-host\local\Transient\ReSharperHost\v12\SolutionCaches\_FiltersJsTreeTest.2090014328.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Admin\.Rider2018.1\System\resharper-host\local\Transient\ReSharperHost\v12\SolutionCaches\_FiltersJsTreeTest.-1923834671.00" t="ExcludeRecursive" />
     <e p="C:\Users\Admin\Main\Comarch BI Point\Comarch.BI.Point.WEB\assets\DevExtreme_css\dx.common.css" t="Include" />
     <e p="C:\Users\Admin\Main\Comarch BI Point\Comarch.BI.Point.WEB\assets\DevExtreme_css\dx.light.css" t="Include" />
     <e p="C:\Users\Admin\Main\Comarch BI Point\Comarch.BI.Point.WEB\assets\DevExtreme_css\generic.light.custom.css" t="Include" />
@@ -27,10 +27,9 @@
     <e p="C:\Users\Admin\Main\Comarch BI Point\Comarch.BI.Point.WEB\assets\plugins\sffjs\cultures\stringformat.fr.js" t="Include" />
     <e p="C:\Users\Admin\Main\Comarch BI Point\Comarch.BI.Point.WEB\assets\plugins\sffjs\cultures\stringformat.pl-PL.js" t="Include" />
     <e p="C:\Users\Admin\Main\Comarch BI Point\Comarch.BI.Point.WEB\assets\plugins\sffjs\stringformat-1.10.js" t="Include" />
-    <e p="C:\Users\Admin\RiderProjects\FiltersJsTreeTest" t="IncludeFlat">
+    <e p="C:\Users\Admin\RiderProjects\FiltersTest" t="IncludeFlat">
       <e p="FiltersJsTreeTest" t="IncludeRecursive">
         <e p="AjaxHelper.ts" t="Include" />
-        <e p="App_Data" t="Include" />
         <e p="App_GlobalResources" t="Include">
           <e p="TestGlobal.designer.cs" t="Include" />
           <e p="TestGlobal.en.designer.cs" t="Include" />
@@ -101,7 +100,6 @@
         <e p="global.d.ts" t="Include" />
         <e p="Index.ts" t="Include" />
         <e p="Manual.ts" t="Include" />
-        <e p="Models" t="Include" />
         <e p="obj" t="ExcludeRecursive" />
         <e p="packages.config" t="Include" />
         <e p="Properties" t="Include">
@@ -162,9 +160,14 @@
             <e p="linq" t="Include">
               <e p="linq.d.ts" t="Include" />
             </e>
+            <e p="typemoq.d.ts" t="Include" />
           </e>
         </e>
         <e p="TestPage.ts" t="Include" />
+        <e p="Tests" t="Include">
+          <e p="ExampleTests.ts" t="Include" />
+        </e>
+        <e p="TestsHarness.html" t="Include" />
         <e p="TextWidthJQueryPlugin.js" t="Include" />
         <e p="tsconfig.json" t="Include" />
         <e p="Views" t="Include">

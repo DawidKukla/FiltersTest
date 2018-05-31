@@ -219,6 +219,9 @@
     <Content Include="Scripts\jstree\themes\default\style.min.css" />
     <Content Include="Scripts\jstree\themes\default\throbber.gif" />
     <Content Include="Scripts\linq.js" />
+    <Content Include="Scripts\typings\typemoq.d.ts" />
+    <Content Include="TestsHarness.html" />
+    <Content Include="Tests\ExampleTests.ts" />
     <Content Include="TextWidthJQueryPlugin.js" />
     <Content Include="Web.config" />
     <Content Include="Views\Default\TestTree.cshtml" />
@@ -263,10 +266,6 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="..\..\..\Main\Comarch BI Point\Comarch.BI.Point.WEB\assets\js\Utils\TreeHelpers.ts">

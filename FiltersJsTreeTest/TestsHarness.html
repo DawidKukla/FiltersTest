@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        
+       /* Extreme hack: Typescript Even if module is set to none generates requires*/
+        var exports={};
+        var require=function (name) {
+            if (name==="typemoq"){
+                return TypeMoq;
+            } 
+        };
+    </script>
+    <title>Jasmine 1.3.1 Spec Runner: Jasmine Core</title>
+    <link rel="icon" href="favicon.ico" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <script src="https://unpkg.com/circular-json/build/circular-json"></script>
+    <script src="https://unpkg.com/lodash"></script>
+    <script src="https://unpkg.com/typemoq"></script>
+    @@ReferencedCSSFiles@@
+    @@TestFrameworkDependencies@@ 
+    @@ReSharperIntegration@@
+    @@ReferencedJSFiles@@
+</head>
+<body>
+
+</body>
+</html>
