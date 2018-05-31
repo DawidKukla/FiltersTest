@@ -1,0 +1,50 @@
+﻿@using System.Web.Optimization
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <script src="~/Scripts/linq.js"></script>
+    <script src="~/Scripts/jquery-3.3.1.js"></script>
+    <script src="~/TextWidthJQueryPlugin.js"></script>
+    <script src="~/Scripts/Comarch/jstree/jstree.js"></script>
+    <script src="~/AjaxHelper.js"></script>
+    <script src="~/Scripts/Comarch/collections.js"></script>
+    <script src="~/Scripts/Comarch/TreeHelpers.js"></script>
+    <script src="~/Scripts/Comarch/dx.all.js"></script>
+
+    <script src="~/Scripts/Comarch/sffjs/stringformat-1.10.js"></script>
+    <script src="~/Scripts/Comarch/sffjs/cultures/stringformat.de-DE.js"></script>
+    <script src="~/Scripts/Comarch/sffjs/cultures/stringformat.en-US.js"></script>
+    <script src="~/Scripts/Comarch/sffjs/cultures/stringformat.en.js"></script>
+    <script src="~/Scripts/Comarch/sffjs/cultures/stringformat.fr-FR.js"></script>
+    <script src="~/Scripts/Comarch/sffjs/cultures/stringformat.fr.js"></script>
+    <script src="~/Scripts/Comarch/sffjs/cultures/stringformat.pl-PL.js"></script>
+
+
+
+    <link href="~/Scripts/Comarch/jstree/themes/comarch-dark/style.css" rel="stylesheet" />
+    <link href="~/Scripts/Comarch/dx.common.css" rel="stylesheet" />
+    <link href="~/Scripts/Comarch/dx.light.css" rel="stylesheet" />
+    <link href="~/Scripts/Comarch/generic.light.custom.css" rel="stylesheet" />
+    <link href="~/Content/font-awesome.css" rel="stylesheet" />
+
+    @RenderSection("styles", false)
+
+</head>
+<body style="background-color: #7f8c8d">
+<div>
+    <script>
+      window["_fakeTree"]=@Html.Raw(File.ReadAllText(Server.MapPath("~/FakeTree.json")));
+      window["_fakeState"]=@Html.Raw(File.ReadAllText(Server.MapPath("~/FakeState.json")));
+      @*window["_fakeDefaultMember"]=@Html.Raw(File.ReadAllText(Server.MapPath("~/FakeDefaultMember.json")));*@
+      window["_fakeCleanedState"]=@Html.Raw(File.ReadAllText(Server.MapPath("~/FakeCleanedState.json")));
+    </script>
+    @RenderBody()
+   
+   
+</div>
+@RenderSection("scripts",false)
+</body>
+</html>

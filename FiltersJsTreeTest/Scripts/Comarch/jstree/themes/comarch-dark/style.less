@@ -1,0 +1,63 @@
+/* jsTree default theme */
+@theme-name: comarch-dark;
+@hovered-bg-color: rgba(0,0,0,0);
+@hovered-shadow-color: rgba(0,0,0,0);
+@disabled-color: #666666;
+@disabled-bg-color: #efefef;
+@clicked-bg-color: rgba(0,0,0,0);
+@clicked-shadow-color: rgba(0,0,0,0);
+@clicked-gradient-color-1: rgba(0,0,0,0);
+@clicked-gradient-color-2: rgba(0,0,0,0);
+@search-result-color: #8b0000;
+@mobile-wholerow-bg-color: rgba(0,0,0,0);
+@mobile-wholerow-shadow: rgba(0,0,0,0);
+@mobile-wholerow-bordert: rgba(0,0,0,0);
+@mobile-wholerow-borderb: rgba(0,0,0,0);
+@responsive: true;
+@image-path: "./comarch-dark/";
+@base-height: 40px;
+
+@import "../mixins.less";
+@import "../base.less";
+@import "../main.less";
+@import (reference) "../../../../css/comarchColors.less";
+
+.jstree-@{theme-name} {
+    > .jstree-container-ul .jstree-loading > .jstree-ocl {
+        background: url("throbber.svg") center center no-repeat;
+        width: 10px;
+        height: 10px;
+        vertical-align: middle;
+    }
+
+    .jstree-leaf > .jstree-ocl {
+        cursor: default;
+    }
+
+    .jstree-wholerow-ul .jstree-leaf > .jstree-ocl {
+        cursor: pointer;
+    }
+
+    .jstree-anchor {
+        color: #ffffff;
+        width: 90%;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+    }
+
+    &#jstree-marker {
+        z-index: 10000;
+        color: @CC_STD_WHITE;
+    }
+
+    @media (max-width: 768px) {
+        jstree-anchor {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            text-shadow: none;
+        }
+    }
+}
+

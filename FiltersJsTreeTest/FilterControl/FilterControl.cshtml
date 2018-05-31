@@ -1,0 +1,47 @@
+﻿@using FiltersJsTreeTest
+@* @using FiltersJsTreeTest.FilterControl *@
+@inherits System.Web.Mvc.WebViewPage
+<link href="~/FilterControl/CSS/FilterControl.css" rel="stylesheet" />
+<script src="~/FilterControl/JS/FilterStateManager/Common.js"></script>
+<script src="~/FilterControl/JS/Common.js"></script>
+<script src="~/FilterControl/JS/Options.js"></script>
+<script src="~/FilterControl/JS/FilterStateManager/ExtendedFilterItem.js"></script>
+<script src="~/FilterControl/JS/FilterStateManager/FilterStateManager.js"></script>
+<script src="~/FilterControl/JS/Service/MockService.js"></script>
+<script src="~/FilterControl/JS/Service/FilterService.js"></script>
+
+
+<script src="~/FilterControl/JS/Helpers/LimitsHelper.js"></script>
+<script src="~/FilterControl/JS/FilterControlView.js"></script>
+<script src="~/FilterControl/JS/FilterControl.js"></script>
+
+<script>
+    window["filterControlResources_95ec3678f2ef437e8df72c771b74e45e"] = @Html.Raw(ResourcesHelper.GetAllLocalResourcesAsJson("~/FilterControl/FilterControl.cshtml"));
+</script>
+<script id="filterControlTemplate_95ec3678f2ef437e8df72c771b74e45e" type="text/template">
+   <div>
+       <div>
+           <div data-id="_memberFilterTypeSelectContainer" class="filterControlBarItem" style="width:10%; margin-right:-10px"></div>
+           <div data-id="_filterTxtContainer" class="filterControlBarItem" style="width:52%"></div>
+           <div class="filterControlBarItem fakeDevExtreemeSelectPart dx-texteditor" style="width:20px;">
+               <div data-id="_levelsMenuButton" class="filterControlIco dx-dropdowneditor-icon"></div>
+               <div data-id="_levelsMenuContainer"></div>
+           </div>
+           <div class="filterControlBarItem" style="width:5%;">
+               <i data-id="_moreOptionsButton" class="filterControlIcon fa fa-2x fa-cog"></i>
+               <div data-id="_optionsMenuContainer"></div>
+           </div>
+       </div>
+        <div>
+            <span data-id="_filterLevelText"></span>
+            <span data-id="_filterLevelMenuButton"></span>
+            <div data-id="_filterLevelMenuContainer"></div>
+        </div>
+        <div data-id="_notAllElementsVisibleContainer">
+            <i class="filterControlBarItem filterControlIcon fa fa-exclamation-triangle" st></i>
+            <span data-id="_notAllElementsVisibleTxt" class="filterControlBarItem"></span>
+            <span data-id="_notAllElementsVisibleCount" class="filterControlBarItem "></span>
+        </div>
+        <div data-id="_jstreeContainer"></div>
+    </div>
+</script>

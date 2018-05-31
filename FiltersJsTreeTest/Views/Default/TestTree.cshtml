@@ -1,0 +1,29 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section scripts {
+    <script src="~/RandomTreeGenerator.js"></script>
+    <script src="~/TestPage.js"></script>
+}
+CONNECTION STRING: <input id="connectionStringTxt" style="width: 600px" type="text" value="Data Source=jelcz;Initial Catalog=XL2014;Cube=Logistyka;Integrated Security=SSPI;" />
+FIELD UNIQE NAME: <input id="fieldUniqueNameTxt" style="width: 200px" type="text" value="[Czas].[Kalendarzowy].[Rok]" />
+<button id="changeConnection">CHANGE CONNECTION</button>
+<button id="mockConnection">MOCK CONNECTION</button>
+<br />
+<button id="loadState">LOAD STATE</button>
+<button id="saveState">SAVE STATE</button>
+<button id="disableLogs">DISABLE LOGS</button>
+<button id="enableLogs">ENABLE LOGS</button>
+<br />
+<div>
+    PACKAGE SIZE: <input id="packageSize" type="text" value="" />
+    MAX TOTAL ELEMENTS COUNT: <input id="totalElementsCount" type="text" value="" />
+    CURRENT WINDOW: <input id="currentWindow" type="text" value="" />
+</div>
+<br />
+<br />
+<br />
+<br />
+@{ Html.RenderPartial("~/FilterControl/FilterControl.cshtml", new {}); }
+<div id="filterControlContainer"></div>

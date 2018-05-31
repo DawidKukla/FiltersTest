@@ -1,0 +1,142 @@
+﻿[
+  {
+    "text": "2000",
+    "children": [
+      {
+        "text": "Q1",
+        "children": [
+          {
+            "text": "January",
+            "children": [
+              { "text": "1", "children": [] }, { "text": "2", "children": [] }, { "text": "3", "children": [] }, { "text": "4", "children": [] }, { "text": "5", "children": [] }
+            ]
+          }, { "text": "February", "children": [] }, { "text": "March", "children": [] }
+        ]
+      },
+      {
+        "text": "Q2",
+        "children": [{ "text": "April", "children": [] }, { "text": "May", "children": [] }, { "text": "June", "children": [] }]
+      },
+      {
+        "text": "Q3",
+        "children": [{ "text": "July", "children": [] }, { "text": "August", "children": [] }, { "text": "September", "children": [] }]
+      },
+      {
+        "text": "Q4",
+        "children": [
+          { "text": "October", "children": [] }, { "text": "November", "children": [] }, {
+            "text": "December",
+            "children": [
+              { "text": "1", "children": [] }, { "text": "2", "children": [] }, { "text": "3", "children": [] }, { "text": "4", "children": [] }, { "text": "5", "children": [] }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "text": "2001",
+    "children": [
+      {
+        "text": "Q1",
+        "children": [{ "text": "January", "children": [] }, { "text": "February", "children": [] }, { "text": "March", "children": [] }]
+      },
+      {
+        "text": "Q2",
+        "children": [{ "text": "April", "children": [] }, { "text": "May", "children": [] }, { "text": "June", "children": [] }]
+      },
+      {
+        "text": "Q3",
+        "children": [{ "text": "July", "children": [] }, { "text": "August", "children": [] }, { "text": "September", "children": [] }]
+      },
+      {
+        "text": "Q4",
+        "children": [{ "text": "October", "children": [] }, { "text": "November", "children": [] }, { "text": "December", "children": [] }]
+      }
+    ]
+  },
+  {
+    "text": "2002",
+    "children": [
+      {
+        "text": "Q1",
+        "children": [{ "text": "January", "children": [] }, { "text": "February", "children": [] }, { "text": "March", "children": [] }]
+      },
+      {
+        "text": "Q2",
+        "children": [{ "text": "April", "children": [] }, { "text": "May", "children": [] }, { "text": "June", "children": [] }]
+      },
+      {
+        "text": "Q3",
+        "children": [{ "text": "July", "children": [] }, { "text": "August", "children": [] }, { "text": "September", "children": [] }]
+      },
+      {
+        "text": "Q4",
+        "children": [{ "text": "October", "children": [] }, { "text": "November", "children": [] }, { "text": "December", "children": [] }]
+      }
+    ]
+  },
+  {
+    "text": "2003",
+    "children": [
+      {
+        "text": "Q1",
+        "children": [{ "text": "January", "children": [] }, { "text": "February", "children": [] }, { "text": "March", "children": [] }]
+      },
+      {
+        "text": "Q2",
+        "children": [{ "text": "April", "children": [] }, { "text": "May", "children": [] }, { "text": "June", "children": [] }]
+      },
+      {
+        "text": "Q3",
+        "children": [{ "text": "July", "children": [] }, { "text": "August", "children": [] }, { "text": "September", "children": [] }]
+      },
+      {
+        "text": "Q4",
+        "children": [{ "text": "October", "children": [] }, { "text": "November", "children": [] }, { "text": "December", "children": [] }]
+      }
+    ]
+  },
+  {
+    "text": "2004",
+    "children": [
+      {
+        "text": "Q1",
+        "children": [{ "text": "January", "children": [] }, { "text": "February", "children": [] }, { "text": "March", "children": [] }]
+      },
+      {
+        "text": "Q2",
+        "children": [{ "text": "April", "children": [] }, { "text": "May", "children": [] }, { "text": "June", "children": [] }]
+      },
+      {
+        "text": "Q3",
+        "children": [{ "text": "July", "children": [] }, { "text": "August", "children": [] }, { "text": "September", "children": [] }]
+      },
+      {
+        "text": "Q4",
+        "children": [{ "text": "October", "children": [] }, { "text": "November", "children": [] }, { "text": "December", "children": [] }]
+      }
+    ]
+  },
+  {
+    "text": "2005",
+    "children": [
+      {
+        "text": "Q1",
+        "children": [{ "text": "January", "children": [] }, { "text": "February", "children": [] }, { "text": "March", "children": [] }]
+      },
+      {
+        "text": "Q2",
+        "children": [{ "text": "April", "children": [] }, { "text": "May", "children": [] }, { "text": "June", "children": [] }]
+      },
+      {
+        "text": "Q3",
+        "children": [{ "text": "July", "children": [] }, { "text": "August", "children": [] }, { "text": "September", "children": [] }]
+      },
+      {
+        "text": "Q4",
+        "children": [{ "text": "October", "children": [] }, { "text": "November", "children": [] }, { "text": "December", "children": [] }]
+      }
+    ]
+  }
+]

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Admin\.Rider2018.1\System\resharper-host\local\Transient\ReSharperHost\v12\SolutionCaches\_FiltersJsTreeTest.2090014328.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Admin\Main\Comarch BI Point\Comarch.BI.Point.WEB\assets\DevExtreme_css\dx.common.css" t="Include" />
+    <e p="C:\Users\Admin\Main\Comarch BI Point\Comarch.BI.Point.WEB\assets\DevExtreme_css\dx.light.css" t="Include" />
+    <e p="C:\Users\Admin\Main\Comarch BI Point\Comarch.BI.Point.WEB\assets\DevExtreme_css\generic.light.custom.css" t="Include" />
+    <e p="C:\Users\Admin\Main\Comarch BI Point\Comarch.BI.Point.WEB\assets\DevExtreme_css\icons\dxicons.ttf" t="Include" />
+    <e p="C:\Users\Admin\Main\Comarch BI Point\Comarch.BI.Point.WEB\assets\DevExtreme_css\icons\dxicons.woff" t="Include" />
+    <e p="C:\Users\Admin\Main\Comarch BI Point\Comarch.BI.Point.WEB\assets\DevExtreme_css\icons\dxiconsios.ttf" t="Include" />
+    <e p="C:\Users\Admin\Main\Comarch BI Point\Comarch.BI.Point.WEB\assets\DevExtreme_css\icons\dxiconsios.woff" t="Include" />
+    <e p="C:\Users\Admin\Main\Comarch BI Point\Comarch.BI.Point.WEB\assets\js\Utils\TreeHelpers.ts" t="Include" />
+    <e p="C:\Users\Admin\Main\Comarch BI Point\Comarch.BI.Point.WEB\assets\plugins\collections\collections.js" t="Include" />
+    <e p="C:\Users\Admin\Main\Comarch BI Point\Comarch.BI.Point.WEB\assets\plugins\collections\collections.ts" t="Include" />
+    <e p="C:\Users\Admin\Main\Comarch BI Point\Comarch.BI.Point.WEB\assets\plugins\jstree\jstree.d.ts" t="Include" />
+    <e p="C:\Users\Admin\Main\Comarch BI Point\Comarch.BI.Point.WEB\assets\plugins\jstree\jstree.js" t="Include" />
+    <e p="C:\Users\Admin\Main\Comarch BI Point\Comarch.BI.Point.WEB\assets\plugins\jstree\themes\comarch-dark\32px.png" t="Include" />
+    <e p="C:\Users\Admin\Main\Comarch BI Point\Comarch.BI.Point.WEB\assets\plugins\jstree\themes\comarch-dark\40px.png" t="Include" />
+    <e p="C:\Users\Admin\Main\Comarch BI Point\Comarch.BI.Point.WEB\assets\plugins\jstree\themes\comarch-dark\style.css" t="Include" />
+    <e p="C:\Users\Admin\Main\Comarch BI Point\Comarch.BI.Point.WEB\assets\plugins\jstree\themes\comarch-dark\style.less" t="Include" />
+    <e p="C:\Users\Admin\Main\Comarch BI Point\Comarch.BI.Point.WEB\assets\plugins\jstree\themes\comarch-dark\throbber.gif" t="Include" />
+    <e p="C:\Users\Admin\Main\Comarch BI Point\Comarch.BI.Point.WEB\assets\plugins\jstree\themes\comarch-dark\throbber.svg" t="Include" />
+    <e p="C:\Users\Admin\Main\Comarch BI Point\Comarch.BI.Point.WEB\assets\plugins\sffjs\cultures\stringformat.de-DE.js" t="Include" />
+    <e p="C:\Users\Admin\Main\Comarch BI Point\Comarch.BI.Point.WEB\assets\plugins\sffjs\cultures\stringformat.en-US.js" t="Include" />
+    <e p="C:\Users\Admin\Main\Comarch BI Point\Comarch.BI.Point.WEB\assets\plugins\sffjs\cultures\stringformat.en.js" t="Include" />
+    <e p="C:\Users\Admin\Main\Comarch BI Point\Comarch.BI.Point.WEB\assets\plugins\sffjs\cultures\stringformat.fr-FR.js" t="Include" />
+    <e p="C:\Users\Admin\Main\Comarch BI Point\Comarch.BI.Point.WEB\assets\plugins\sffjs\cultures\stringformat.fr.js" t="Include" />
+    <e p="C:\Users\Admin\Main\Comarch BI Point\Comarch.BI.Point.WEB\assets\plugins\sffjs\cultures\stringformat.pl-PL.js" t="Include" />
+    <e p="C:\Users\Admin\Main\Comarch BI Point\Comarch.BI.Point.WEB\assets\plugins\sffjs\stringformat-1.10.js" t="Include" />
+    <e p="C:\Users\Admin\RiderProjects\FiltersJsTreeTest" t="IncludeFlat">
+      <e p="FiltersJsTreeTest" t="IncludeRecursive">
+        <e p="AjaxHelper.ts" t="Include" />
+        <e p="App_Data" t="Include" />
+        <e p="App_GlobalResources" t="Include">
+          <e p="TestGlobal.designer.cs" t="Include" />
+          <e p="TestGlobal.en.designer.cs" t="Include" />
+          <e p="TestGlobal.en.resx" t="Include" />
+          <e p="TestGlobal.resx" t="Include" />
+        </e>
+        <e p="App_Start" t="Include">
+          <e p="BundleConfig.cs" t="Include" />
+          <e p="RouteConfig.cs" t="Include" />
+          <e p="WebApiConfig.cs" t="Include" />
+        </e>
+        <e p="Bin" t="ExcludeRecursive" />
+        <e p="Content" t="Include">
+          <e p="font-awesome.css" t="Include" />
+          <e p="font-awesome.min.css" t="Include" />
+        </e>
+        <e p="Controllers" t="Include">
+          <e p="DefaultController.cs" t="Include" />
+          <e p="StateController.cs" t="Include" />
+        </e>
+        <e p="FakeCleanedState.json" t="Include" />
+        <e p="FakeDefaultMember.json" t="Include" />
+        <e p="FakeState.json" t="Include" />
+        <e p="FakeTree.json" t="Include" />
+        <e p="FilterControl" t="Include">
+          <e p="App_LocalResources" t="Include">
+            <e p="FilterControl.cshtml.en.resx" t="Include" />
+            <e p="FilterControl.cshtml.resx" t="Include" />
+          </e>
+          <e p="Common.cs" t="Include" />
+          <e p="CSS" t="Include">
+            <e p="FilterControl.css" t="Include" />
+          </e>
+          <e p="FilterControl.cshtml" t="Include" />
+          <e p="FilterControlController.cs" t="Include" />
+          <e p="js" t="Include">
+            <e p="Common.ts" t="Include" />
+            <e p="FilterControl.ts" t="Include" />
+            <e p="FilterControlView.ts" t="Include" />
+            <e p="FilterStateManager" t="Include">
+              <e p="Common.ts" t="Include" />
+              <e p="ExtendedFilterItem.ts" t="Include" />
+              <e p="FilterStateManager.ts" t="Include" />
+            </e>
+            <e p="Helpers" t="Include">
+              <e p="IntersectionCalculator.ts" t="Include" />
+              <e p="LimitsHelper.ts" t="Include" />
+            </e>
+            <e p="Options.ts" t="Include" />
+            <e p="SearchHighlighter.ts" t="Include" />
+            <e p="Service" t="Include">
+              <e p="FilterService.ts" t="Include" />
+              <e p="MockService.ts" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="FiltersJsTreeTest.csproj" t="IncludeRecursive" />
+        <e p="fonts" t="Include">
+          <e p="fontawesome-webfont.eot" t="Include" />
+          <e p="fontawesome-webfont.svg" t="Include" />
+          <e p="fontawesome-webfont.ttf" t="Include" />
+          <e p="fontawesome-webfont.woff" t="Include" />
+          <e p="fontawesome-webfont.woff2" t="Include" />
+          <e p="FontAwesome.otf" t="Include" />
+        </e>
+        <e p="Global.asax" t="Include" />
+        <e p="Global.asax.cs" t="Include" />
+        <e p="global.d.ts" t="Include" />
+        <e p="Index.ts" t="Include" />
+        <e p="Manual.ts" t="Include" />
+        <e p="Models" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="RandomTreeGenerator.ts" t="Include" />
+        <e p="ResourcesHelper.cs" t="Include" />
+        <e p="Scripts" t="Include">
+          <e p="bluebird.js" t="Include" />
+          <e p="Comarch" t="Include">
+            <e p="dx.all.d.ts" t="Include" />
+            <e p="dx.all.js" t="Include" />
+            <e p="icons" t="Include" />
+            <e p="jstree" t="Include">
+              <e p="themes" t="Include">
+                <e p="comarch-dark" t="Include" />
+              </e>
+            </e>
+            <e p="ssfjs" t="Include">
+              <e p="cultures" t="Include" />
+            </e>
+          </e>
+          <e p="jquery-3.3.1-vsdoc.js" t="Include" />
+          <e p="jquery-3.3.1.js" t="Include" />
+          <e p="jquery-3.3.1.min.js" t="Include" />
+          <e p="jquery-3.3.1.min.map" t="Include" />
+          <e p="jquery-3.3.1.slim.js" t="Include" />
+          <e p="jquery-3.3.1.slim.min.js" t="Include" />
+          <e p="jquery-3.3.1.slim.min.map" t="Include" />
+          <e p="jstree" t="Include">
+            <e p="jstree.js" t="Include" />
+            <e p="themes" t="Include">
+              <e p="default" t="Include">
+                <e p="32px.png" t="Include" />
+                <e p="40px.png" t="Include" />
+                <e p="style.css" t="Include" />
+                <e p="style.min.css" t="Include" />
+                <e p="throbber.gif" t="Include" />
+              </e>
+              <e p="default-dark" t="Include">
+                <e p="32px.png" t="Include" />
+                <e p="40px.png" t="Include" />
+                <e p="style.css" t="Include" />
+                <e p="style.min.css" t="Include" />
+                <e p="throbber.gif" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="linq.js" t="Include" />
+          <e p="typings" t="Include">
+            <e p="bluebird-global.d.ts" t="Include" />
+            <e p="jquery" t="Include">
+              <e p="jquery.d.ts" t="Include" />
+            </e>
+            <e p="jstree" t="Include">
+              <e p="jstree.d.ts" t="Include" />
+            </e>
+            <e p="linq" t="Include">
+              <e p="linq.d.ts" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="TestPage.ts" t="Include" />
+        <e p="TextWidthJQueryPlugin.js" t="Include" />
+        <e p="tsconfig.json" t="Include" />
+        <e p="Views" t="Include">
+          <e p="default" t="Include">
+            <e p="Index.cshtml" t="Include" />
+            <e p="Manual.cshtml" t="Include" />
+            <e p="TestTree.cshtml" t="Include" />
+          </e>
+          <e p="Shared" t="Include">
+            <e p="_Layout.cshtml" t="Include" />
+          </e>
+          <e p="web.config" t="Include" />
+        </e>
+        <e p="web.config" t="Include" />
+        <e p="Web.Debug.config" t="Include" />
+        <e p="Web.Release.config" t="Include" />
+      </e>
+      <e p="FiltersJsTreeTest.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

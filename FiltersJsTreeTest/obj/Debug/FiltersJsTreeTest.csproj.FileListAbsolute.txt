@@ -1,0 +1,196 @@
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\FiltersJsTreeTest.dll.config
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\FiltersJsTreeTest.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\FiltersJsTreeTest.pdb
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\csc.exe
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\csc.exe.config
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\csc.rsp
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\csi.exe
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\csi.exe.config
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\csi.rsp
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\System.AppContext.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\System.Collections.Immutable.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\System.Console.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\System.Diagnostics.Process.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\System.IO.Compression.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\System.IO.FileSystem.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\System.IO.Pipes.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\System.Reflection.Metadata.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\System.Security.AccessControl.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\System.Security.Claims.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\System.Security.Principal.Windows.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\System.Threading.Thread.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\System.ValueTuple.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\System.Xml.XmlDocument.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\System.Xml.XPath.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\vbc.exe
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\vbc.exe.config
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\vbc.rsp
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\VBCSCompiler.exe
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\VBCSCompiler.exe.config
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\Antlr3.Runtime.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\Comarch.BI.TabularData.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\Microsoft.Web.Infrastructure.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\Newtonsoft.Json.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\System.Net.Http.Formatting.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\System.Web.Helpers.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\System.Web.Http.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\System.Web.Http.WebHost.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\System.Web.Mvc.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\System.Web.Optimization.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\System.Web.Razor.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\System.Web.Webpages.Deployment.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\System.Web.Webpages.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\System.Web.Webpages.Razor.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\WebGrease.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\Comarch.BI.AnalysisEngine.DataSource.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\Microsoft.AnalysisServices.AdomdClient.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\Comarch.BI.AnalysisEngine.Utils.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\Comarch.BI.AnalysisEngine.Client.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\protobuf-net.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\Comarch.BI.AnalysisEngine.Distributed.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\StackExchange.Redis.StrongName.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\Comarch.BI.Redis.SentinelAwareProvider.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\log4net.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\Polly.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\Antlr3.Runtime.pdb
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\Comarch.BI.TabularData.pdb
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\System.Net.Http.Formatting.xml
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\System.Web.Http.xml
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\System.Web.Http.WebHost.xml
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\System.Web.Optimization.xml
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\System.Web.Razor.xml
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\System.Web.Webpages.xml
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\System.Web.Webpages.Deployment.xml
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\System.Web.Webpages.Razor.xml
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\System.Web.Helpers.xml
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\System.Web.Mvc.xml
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\Newtonsoft.Json.xml
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\Comarch.BI.AnalysisEngine.DataSource.pdb
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\Comarch.BI.AnalysisEngine.Utils.pdb
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\Comarch.BI.AnalysisEngine.Client.pdb
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\Comarch.BI.AnalysisEngine.Distributed.pdb
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\StackExchange.Redis.StrongName.xml
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\Comarch.BI.Redis.SentinelAwareProvider.pdb
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\de\Comarch.BI.TabularData.resources.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\en\Comarch.BI.TabularData.resources.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\es-ES\Comarch.BI.TabularData.resources.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\fr-FR\Comarch.BI.TabularData.resources.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\de\Comarch.BI.AnalysisEngine.Utils.resources.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\en\Comarch.BI.AnalysisEngine.Utils.resources.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\es-ES\Comarch.BI.AnalysisEngine.Utils.resources.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\fr-FR\Comarch.BI.AnalysisEngine.Utils.resources.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\de\Comarch.BI.AnalysisEngine.Client.resources.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\en\Comarch.BI.AnalysisEngine.Client.resources.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\es-ES\Comarch.BI.AnalysisEngine.Client.resources.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\bin\fr-FR\Comarch.BI.AnalysisEngine.Client.resources.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\obj\Debug\FiltersJsTreeTest.csproj.CoreCompileInputs.cache
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\obj\Debug\FiltersJsTreeTest.csproj.CopyComplete
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\obj\Debug\FiltersJsTreeTest.dll
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\obj\Debug\FiltersJsTreeTest.pdb
+C:\TFS\ERP BI\Tools\FiltersJsTreeTest\FiltersJsTreeTest\obj\Debug\FiltersJsTreeTest.csprojAssemblyReference.cache
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\obj\Debug\FiltersJsTreeTest.csprojResolveAssemblyReference.cache
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\obj\Debug\FiltersJsTreeTest.dll
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\obj\Debug\FiltersJsTreeTest.pdb
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\FiltersJsTreeTest.dll.config
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\FiltersJsTreeTest.dll
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\FiltersJsTreeTest.pdb
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\csc.exe
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\csc.exe.config
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\csc.rsp
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\csi.exe
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\csi.exe.config
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\csi.rsp
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\System.AppContext.dll
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\System.Console.dll
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\System.Diagnostics.Process.dll
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\System.IO.Compression.dll
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\System.IO.Pipes.dll
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\System.Security.Claims.dll
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\System.Threading.Thread.dll
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\System.ValueTuple.dll
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\vbc.exe
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\vbc.exe.config
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\vbc.rsp
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\VBCSCompiler.exe
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\Antlr3.Runtime.dll
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\Newtonsoft.Json.dll
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\System.Net.Http.Formatting.dll
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\System.Web.Helpers.dll
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\System.Web.Http.dll
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\System.Web.Http.WebHost.dll
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\System.Web.Mvc.dll
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\System.Web.Optimization.dll
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\System.Web.Razor.dll
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\System.Web.Webpages.dll
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\System.Web.Webpages.Razor.dll
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\WebGrease.dll
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\Antlr3.Runtime.pdb
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\Newtonsoft.Json.xml
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\System.Net.Http.Formatting.xml
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\System.Web.Http.xml
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\System.Web.Http.WebHost.xml
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\System.Web.Optimization.xml
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\System.Web.Razor.xml
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\System.Web.Webpages.xml
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\System.Web.Webpages.Razor.xml
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\System.Web.Helpers.xml
+C:\Users\Admin\RiderProjects\FiltersJsTreeTest\FiltersJsTreeTest\bin\System.Web.Mvc.xml

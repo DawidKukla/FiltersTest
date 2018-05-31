@@ -1,0 +1,244 @@
+﻿namespace TestTree {
+    import RandomTreeGenerator = RandomTreeGeneratorModule.RandomTreeGenerator;
+    import ITestNode = Common.ITestNode;
+    import IJstreeRedrawNodeArgs = Common.IJstreeRedrawNodeArgs;
+    import MockService = MockServiceModule.MockService;
+    import ITestNodeData = Common.ITestNodeData;
+
+    export class TestTree {
+        private _generator: RandomTreeGenerator;
+        private _data:Array<Object>=[];
+        private _$jstreeContainer:JQuery;
+        private _$referenceJstreeContainer:JQuery;
+        private _elementsToLoad: ITestNode[];
+        private _dataPackageSize:number=2;
+        private _searchPattern:string;
+        private _searchLevel:string;
+        private _noSearchTreeState:Array<Object>=[];
+        private _service: MockService;
+
+        get IsInSearchMode():boolean {return Boolean(this._searchPattern)};
+
+        get $ReferenceJstreeContainer(): JQuery {
+            return this._$referenceJstreeContainer || (this._$referenceJstreeContainer = $("#referenceJstreeContainer"));
+        }
+        get ReferenceJstreeInstance(): JSTree {
+            return $.jstree.reference(this.$ReferenceJstreeContainer);
+        }
+
+        get $JstreeContainer(): JQuery {
+            return this._$jstreeContainer || (this._$jstreeContainer = $("#jstreeContainer"));
+        }
+        get JstreeInstance(): JSTree {
+            return $.jstree.reference(this.$JstreeContainer);
+        }
+
+        get $SearchTextBox(): JQuery {
+            return $("#searchTxt");
+        }
+
+        get $LevelsSelect(): JQuery {
+            return $("#levelsSelect");
+        }
+
+        get $SearchButton(): JQuery {
+            return $("#searchButton");
+        }
+
+        constructor() {
+            console.log("TestTree created.");
+            this._generator = new RandomTreeGenerator();
+            this.Init();
+            
+        }
+
+        Init() {
+            this._service = new MockService(window["_fakeTree"]);
+            this.CreateReferenceTree(this._service.GetFullData());
+            this.CreateReferenceTree(this._generator.GenerateFlatDataCore(500));
+            this.BindEvents();
+            this.GenerateData();
+            //this.Refresh();
+            //this.$JstreeContainer.on("comarch_redraw_node.comarch.jstree", this.OnRedrawNode.bind(this));
+        }
+
+        private BindEvents() {
+            this.$SearchButton.click(this.OnSearch.bind(this));
+        }
+        
+        Refresh() {
+            
+            this.$JstreeContainer.jstree("destroy");
+            this.$JstreeContainer.jstree(
+                {
+                    'plugins': ["core", "checkbox", "comarch_redraw_node", "conditionalselect"],
+                    'core': {
+                        'data': (obj, cb) => {
+                            this.GetNodeData(obj, cb);
+
+                        },
+                        'check_callback': (operation) => {
+                            return operation === "create_node" || operation==="delete_node";
+                        },
+                    },
+                    'conditionalselect': this.OnConditionalSelect.bind(this)
+                });
+        }
+
+        private GenerateData() {
+            this._data = this._generator.GetRandomNodes(100);
+            console.log(this._data);
+        }
+
+        GetNodeData(obj: ITestNode, renderingCallback) {
+            var loadedNodes= this.LoadNodesFromServerCore(obj, 0);
+            renderingCallback.call(this.JstreeInstance, loadedNodes);
+        }
+        
+        private LoadNodesFromServerCore(obj: ITestNode,startIndex:number):ITestNode[] {
+            var loadedNodes: ITestNode[];
+            if (obj.id === "#") {
+                if (this.IsInSearchMode) {
+                    //loadedNodes=
+                } else {
+                    loadedNodes = this._service.GetRootLevelData(startIndex,this.GetExtendedPackageSize());
+                }
+                
+            }else {
+                loadedNodes = this._service.GetChildren(obj.id,startIndex,this.GetExtendedPackageSize());
+            }
+            this.HandleMoreElementsLazyLoading(obj,loadedNodes);
+            return loadedNodes;
+        }
+        
+        private HandleMoreElementsLazyLoading(invokingNode: ITestNode,loadedNodes: ITestNode[]) {
+            if (this.CanLoadMoreElements(loadedNodes)) {
+                loadedNodes.push(this.CreateLoadMoreNode(invokingNode,loadedNodes));
+            }
+        }
+
+        private GetExtendedPackageSize() {
+            return this._dataPackageSize + 1;
+        }
+
+        private CanLoadMoreElements(loadedNodes: ITestNode[]) {
+            var result = loadedNodes.length === this.GetExtendedPackageSize();
+            if (result) {
+                loadedNodes.pop();
+            }
+            return result;
+        }
+
+        OnRedrawNode (eventObject: JQueryEventObject, e: IJstreeRedrawNodeArgs<any, any>){
+            if (this.IsShowMoreMember(e.CurrentNodeObj)) {
+                let $anchor = $(e.CurrentNodeElement).children(".jstree-anchor");
+                $anchor.children(".jstree-checkbox").remove();
+                $anchor.children(".jstree-themeicon").remove();
+            }
+        }
+
+        OnConditionalSelect(node: ITestNode) {
+            var result = true;
+            if (this.IsShowMoreMember(node)) {
+                console.log("Loading More Nodes");
+                this.LoadMoreNodes(node);
+                result = false;
+            }
+            return result;
+        }
+
+
+        LoadMoreNodes(targetNode: ITestNode) {
+            var parentNode = this.JstreeInstance.get_node(targetNode.parent);
+            targetNode.text = "";
+            this.JstreeInstance.redraw_node(targetNode,false,false,false);
+            var $loadMoreLiElement = $(this.JstreeInstance.get_node(targetNode.id, true));
+            $loadMoreLiElement.addClass("jstree-loading");
+            var startIndex = targetNode.data.nextLoadStartIndex;
+            var loadedNodes = this.LoadNodesFromServerCore(parentNode, startIndex);
+            loadedNodes.forEach((node) => {
+                this.JstreeInstance.create_node(parentNode.id, node);
+            });
+            this.JstreeInstance.delete_node(targetNode.id);
+
+        }
+
+        private CreateLoadMoreNode(parentNode: ITestNode,loadedNodes: ITestNode[]): ITestNode {
+            
+            var startIndex = loadedNodes.length;
+            if (parentNode.children.length) {
+                startIndex += parentNode.children.length - 1;// without load more node
+            }
+            let node:ITestNode = {
+                id:`ShowMore_${this.GetRandomId()}`,
+                text: "...ShowMore",
+                data: {
+                    isShowMoreMember: true,
+                    parentNodeId: parentNode.id,
+                    nextLoadStartIndex: startIndex
+                }
+            };
+            
+            return node;
+        }
+
+        private GetRandomId() {
+            return Math.random().toString(36).replace(/[^a-z]+/g, '').substr(2, 10);
+        }
+
+        private IsShowMoreMember(nodeObj: ITestNode) {
+            return nodeObj.data && nodeObj.data.isShowMoreMember;
+        }
+
+
+        CreateReferenceTree(data: Object[]) {
+            this.$ReferenceJstreeContainer.jstree(
+                {
+                    'plugins': ["core", "checkbox"],
+                    'core': {
+                        'data': data,
+                        'check_callback': (operation) => {
+                            return operation === "create_node" || operation==="delete_node";
+                        },
+                    },
+                }).on('loaded.jstree',() => {
+                    this.$ReferenceJstreeContainer.jstree('open_all');
+                }).on('ready.jstree',() => {
+              //  data.forEach(x=>this.ReferenceJstreeInstance.create_node("#",x));
+            });
+
+
+        }
+
+
+        OnSearch(e: JQueryEventObject) {
+            this._searchPattern = this.$SearchTextBox.val();
+            this._searchLevel = this.$LevelsSelect.val();
+            console.log(this._searchPattern,this._searchLevel);
+            if (!Boolean(this._searchPattern)) {
+                this.ClearSearch();
+                return;
+            }
+            this.Search(this._searchPattern);
+        }
+        
+        Search(searchPattern:string) {
+            this._service.ClearSearch();
+            this._service.SearchMembers(parseInt(this._searchLevel), 0, this.GetExtendedPackageSize(), searchPattern);
+            this._noSearchTreeState = this.JstreeInstance.get_json("#");
+            this.JstreeInstance.load_node(this.JstreeInstance.get_node("#"),()=> {});
+        }
+
+        ClearSearch() {
+            console.log("CLEAR SEARCH:");
+            this._service.ClearSearch();
+            this._noSearchTreeState.length = 0;
+            this.JstreeInstance.load_node(this.JstreeInstance.get_node("#"),()=> {});
+        }
+
+
+        
+    }
+}
+
+var page = new TestTree.TestTree();

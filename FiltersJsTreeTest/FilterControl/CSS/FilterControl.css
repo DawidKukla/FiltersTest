@@ -1,0 +1,46 @@
+﻿.jstree-anchor > .jstree-icon.jstree-checkbox.jstree-comarch-undetermined { background-position: -196px -36px !important; }
+
+.jstree-anchor > .jstree-icon.jstree-checkbox.jstree-comarch-selected { background-position: -228px -36px !important; }
+
+.jstree-anchor > .jstree-icon.jstree-checkbox.jstree-comarch-deselected { background-position: -164px -4px !important; }
+
+@media (max-width: 768px) {
+    .jstree-anchor > .jstree-icon.jstree-checkbox.jstree-comarch-undetermined { background-position: 0 -120px !important; }
+
+    .jstree-anchor > .jstree-icon.jstree-checkbox.jstree-comarch-selected { background-position: 0 -80px !important; }
+
+    .jstree-anchor > .jstree-icon.jstree-checkbox.jstree-comarch-deselected { background-position: -40px -80px !important; }
+}
+
+.jstree-anchor.comarch-disabled, .filter-disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.comarch-whole-tree-loading { /*TODO*/
+    background: url(../../Scripts/jstree/themes/default/throbber.gif) center center no-repeat;
+    height: 24px;
+    width: 24px;
+}
+
+.comarch-search-highlight {
+    background-color: #0090d9;
+}
+
+.filterControlBarItem {
+    display: inline-block;
+    vertical-align: middle
+}
+
+.filterControlIcon { color: white; }
+
+.filterControlIndicatorText { color: white; }
+
+.fakeDevExtreemeSelectPart {
+    background-color: white;
+    height: 34px;
+    margin-left: -7px;
+    position: relative;
+}
+
+[data-id="_notAllElementsVisibleContainer"] { color: white; }

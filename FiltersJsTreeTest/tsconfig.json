@@ -1,0 +1,28 @@
+﻿//{
+//  "compileOnSave": true,
+//  "compilerOptions": {
+//    "target": "es5",
+//    "lib":["es5","dom","es6"],
+//    "declaration": false,
+//    "noImplicitAny": false,
+//    "removeComments": true,
+//    "inlineSourceMap": true,
+//    "inlineSources": true
+//  }
+//}
+
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "target": "es2017",
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "declaration": false,
+    "noImplicitAny": false,
+    "removeComments": true,
+    "inlineSourceMap": true,
+    "inlineSources": true
+    }
+}
