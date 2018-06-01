@@ -7,10 +7,7 @@
     }
     
     export class NodeInfo<T> {
-        constructor(i?:NodeInfo<T>){
-            if(i){
-                Object.assign(this,i)            }
-        }
+        constructor(i?:NodeInfo<T>){if(i){Object.assign(this,i)}}
         Node:T;
         Index:number;
     }
@@ -39,7 +36,7 @@
         Different
     }
     abstract class ComparatorBase<T> {
-        private _options:TreeComparatorOptionsBase<T>;
+        private readonly _options:TreeComparatorOptionsBase<T>;
 
         protected get Options(): TreeComparatorOptionsBase<T>{ return this._options; }
         
@@ -58,8 +55,6 @@
 
         protected constructor(options:TreeComparatorOptionsBase<T>) {
             this._options=options;
-
-
         }
     }
     export class NodeComparator<T> extends ComparatorBase<T> implements INodeComparator {
@@ -93,10 +88,7 @@
 
     export class TreeComparatorOptionsBase<T>{
         
-        constructor(i?:TreeComparatorOptionsBase<T>){
-            if(i){
-                Object.assign(this,i)            }
-                 }
+        constructor(i?:TreeComparatorOptionsBase<T>){if(i){Object.assign(this,i)}}
         A: T;
         B: T;
         UniqueNameSelector: (x: T) => string;
@@ -105,13 +97,7 @@
     }
     
     export class TreeComparatorOptions<T> extends TreeComparatorOptionsBase<T>{
-        constructor(i?:TreeComparatorOptions<T>){
-            super(null)
-            if(i){
-                Object.assign(this,i)
-            }
-            
-        }
+        constructor(i?:TreeComparatorOptions<T>){super(null);if(i){Object.assign(this,i)}}
         OrderInvariant:boolean=true;
         NodeComparatorFactory: INodeComparatorFactory<T>=new NodeComparatorFactory<T>();
         NodeProcessingCallback:(a:T,b:T)=>void=()=>{}
@@ -127,7 +113,6 @@
             super(options);
             
         }
-
 
         public Compare(): ComparisionResult {
             return this.CompareCore(this.A, this.B);
