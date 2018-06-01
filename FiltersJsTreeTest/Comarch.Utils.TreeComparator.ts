@@ -1,19 +1,28 @@
 ﻿module Comarch.Utils.TreeComparator {
-    
+    export interface ITreeComparator {
+        Compare(): ComparisionResult;
+    }
     interface INodeLookup<T> {
         [key: string]: T
     }
-
-    export interface ISingleNodeComparatorFactory<T> {
-        Create(a: T, b: T, uniqueNameSelector: (x: T) => string, childrenSelector: (x: T) => T[]): ISingleNodeComparator;
+    class ComparisionPair<T> {
+        constructor(public A: T, public B: T) { }
     }
-    export interface ISingleNodeComparator {
+
+    interface IChildComparisionInfo<T> {
+        Result:ComparisionResult;
+        ComparisionPairs:ComparisionPair<T>[]
+    }
+    export interface INodeComparatorFactory<T> {
+        Create(a: T, b: T, uniqueNameSelector: (x: T) => string, childrenSelector: (x: T) => T[]): INodeComparator;
+    }
+    export interface INodeComparator {
         Compare(): ComparisionResult;
     }
 
-    export class SingleNodeComparatorFactory<T> implements ISingleNodeComparatorFactory<T> {
-        Create(a: T, b: T, uniqueNameSelector: (x: T) => string, childrenSelector: (x: T) => T[]): ISingleNodeComparator {
-            return new SingleNodeComparator(a, b, uniqueNameSelector, childrenSelector);
+    export class NodeComparatorFactory<T> implements INodeComparatorFactory<T> {
+        Create(a: T, b: T, uniqueNameSelector: (x: T) => string, childrenSelector: (x: T) => T[]): INodeComparator {
+            return new NodeComparator(a, b, uniqueNameSelector, childrenSelector);
         }
     }
     export enum ComparisionResult {
@@ -50,7 +59,7 @@
 
         }
     }
-    export class SingleNodeComparator<T> extends ComparatorBase<T> implements ISingleNodeComparator {
+    export class NodeComparator<T> extends ComparatorBase<T> implements INodeComparator {
         constructor(a: T, b: T, uniqueNameSelector: (x: T) => string, childrenSelector: (x: T) => T[]) {
             super(a, b, uniqueNameSelector, childrenSelector);
         }
@@ -60,15 +69,18 @@
         }
 
         public CompareCore(a: T, b: T): ComparisionResult {
-            if (this.NamesMatch(a, b) || this.ChildrenCountMatch(a, b)) {
-                return ComparisionResult.Different
+            if (this.NamesMatch(a, b) && this.ChildrenCountMatch(a, b)) {
+                return ComparisionResult.Equivalent
             }
             return ComparisionResult.Different;
 
         }
 
         private ChildrenCountMatch(a: T, b: T) {
-            return this.ChildrenSelector(a).length === this.ChildrenSelector(b).length;
+            let childrenA = this.ChildrenSelector(a);
+            let childrenB = this.ChildrenSelector(b);
+            if(!childrenA&& !childrenB) return true;
+            return childrenA.length === childrenB.length;
         }
 
         private NamesMatch(a: T, b: T) {
@@ -78,10 +90,11 @@
 
 
 
-    export class TreeComparator<T> extends ComparatorBase<T>{
-        private _nodeComparatorFactory: ISingleNodeComparatorFactory<T>;
+    export class TreeComparator<T> extends ComparatorBase<T> implements ITreeComparator{
+        
+        private _nodeComparatorFactory: INodeComparatorFactory<T>=new NodeComparatorFactory<T>();
 
-        constructor(a: T, b: T, uniqueNameSelector: (x: T) => string, childrenSelector: (x: T) => T[], nodeComparatorFactory: ISingleNodeComparatorFactory<T>) {
+        constructor(a: T, b: T, uniqueNameSelector: (x: T) => string, childrenSelector: (x: T) => T[], nodeComparatorFactory: INodeComparatorFactory<T>) {
             super(a, b, uniqueNameSelector, childrenSelector);
             this._nodeComparatorFactory = nodeComparatorFactory;
         }
@@ -94,7 +107,7 @@
             var comparator = this.CreateComparator(a, b);
             var result=comparator.Compare();
             if (result === ComparisionResult.Different) return ComparisionResult.Different;
-            var info = this.GetChildrenComparisionInfo(b, a);
+            var info = this.GetChildrenComparisionInfo(a,b);
             if(info.Result==ComparisionResult.Different) return ComparisionResult.Different;
             for (let pair of info.ComparisionPairs){
                 result=this.CompareCore(pair.A,pair.B);
@@ -104,7 +117,7 @@
         }
 
 
-        private GetChildrenComparisionInfo(b: T, a: T):IChildComparisionInfo<T> {
+        private GetChildrenComparisionInfo(a: T,b: T,):IChildComparisionInfo<T> {
             var result:IChildComparisionInfo<T>={
                 ComparisionPairs:[],
                 Result:ComparisionResult.Different
@@ -116,6 +129,7 @@
                     result.ComparisionPairs.push(new ComparisionPair<T>(child, matchingChild))
                 }
                 else {
+                    result.ComparisionPairs.length=0;
                     return result;
                 }
             }
@@ -133,14 +147,7 @@
             return lookup;
         }
     }
-    class ComparisionPair<T> {
-        constructor(public A: T, public B: T) { }
-    }
-
-    export interface IChildComparisionInfo<T> {
-        Result:ComparisionResult;
-        ComparisionPairs:ComparisionPair<T>[]
-    }
+    
 
 
 }   
