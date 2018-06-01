@@ -202,6 +202,7 @@
     <Content Include="fonts\fontawesome-webfont.eot" />
     <None Include="Scripts\jquery-3.3.1-vsdoc.js" />
     <Content Include="FilterControl\CSS\FilterControl.css" />
+    <Content Include="Object.Assign.Polyfill.js" />
     <Content Include="Scripts\bluebird.js" />
     <Content Include="Scripts\Comarch\dx.all.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />

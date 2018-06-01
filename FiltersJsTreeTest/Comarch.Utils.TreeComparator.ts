@@ -14,15 +14,15 @@
         ComparisionPairs:ComparisionPair<T>[]
     }
     export interface INodeComparatorFactory<T> {
-        Create(a: T, b: T, uniqueNameSelector: (x: T) => string, childrenSelector: (x: T) => T[]): INodeComparator;
+        Create(options: TreeComparatorOptionsBase<T>): INodeComparator;
     }
     export interface INodeComparator {
         Compare(): ComparisionResult;
     }
 
     export class NodeComparatorFactory<T> implements INodeComparatorFactory<T> {
-        Create(a: T, b: T, uniqueNameSelector: (x: T) => string, childrenSelector: (x: T) => T[]): INodeComparator {
-            return new NodeComparator(a, b, uniqueNameSelector, childrenSelector);
+        Create(options: TreeComparatorOptionsBase<T>): INodeComparator {
+            return new NodeComparator(options);
         }
     }
     export enum ComparisionResult {
@@ -30,38 +30,32 @@
         Different
     }
     abstract class ComparatorBase<T> {
-        private readonly _a: T;
-        private readonly _b: T;
-        private readonly _uniqueNameSelector: (x: T) => string;
-        private readonly _childrenSelector: (x: T) => T[];
+        private _options:TreeComparatorOptionsBase<T>;
 
-        protected get A(): T { return this._a; }
+        protected get Options(): TreeComparatorOptionsBase<T>{ return this._options; }
+        
+        protected get A(): T { return this._options.A; }
 
-        protected get B(): T {
-            return this._b;
-        }
+        protected get B(): T {return this._options.B;}
 
         protected get UniqueNameSelector(): (x: T) => string {
-            return this._uniqueNameSelector;
+            return this._options.UniqueNameSelector;
         }
 
         protected get ChildrenSelector(): (x: T) => T[] {
-            return this._childrenSelector;
+            return this._options.ChildrenSelector;
         }
 
 
-        protected constructor(a: T, b: T, uniqueNameSelector: (x: T) => string, childrenSelector: (x: T) => T[]) {
-            this._a = a;
-            this._b = b;
-            this._uniqueNameSelector = uniqueNameSelector;
-            this._childrenSelector = childrenSelector;
+        protected constructor(options:TreeComparatorOptionsBase<T>) {
+            this._options=options;
 
 
         }
     }
     export class NodeComparator<T> extends ComparatorBase<T> implements INodeComparator {
-        constructor(a: T, b: T, uniqueNameSelector: (x: T) => string, childrenSelector: (x: T) => T[]) {
-            super(a, b, uniqueNameSelector, childrenSelector);
+        constructor(options:TreeComparatorOptionsBase<T>) {
+            super(options);
         }
 
         Compare(): ComparisionResult {
@@ -79,7 +73,7 @@
         private ChildrenCountMatch(a: T, b: T) {
             let childrenA = this.ChildrenSelector(a);
             let childrenB = this.ChildrenSelector(b);
-            if(!childrenA&& !childrenB) return true;
+            if(!childrenA && !childrenB) return true;
             return childrenA.length === childrenB.length;
         }
 
@@ -88,15 +82,40 @@
         }
     }
 
-
+    export class TreeComparatorOptionsBase<T>{
+        
+        constructor(i?:TreeComparatorOptionsBase<T>){
+            if(i){
+                Object.assign(this,i)            }
+                 }
+        A: T;
+        B: T;
+        UniqueNameSelector: (x: T) => string;
+        ChildrenSelector: (x: T) => T[];
+        
+    }
+    
+    export class TreeComparatorOptions<T> extends TreeComparatorOptionsBase<T>{
+        constructor(i?:TreeComparatorOptions<T>){
+            super(null)
+            if(i){
+                Object.assign(this,i)
+            }
+            
+        }
+        NodeComparatorFactory: INodeComparatorFactory<T>=new NodeComparatorFactory<T>();
+        NodeProcessingCallback:(a:T,b:T)=>void=()=>{}
+    }
 
     export class TreeComparator<T> extends ComparatorBase<T> implements ITreeComparator{
         
-        private _nodeComparatorFactory: INodeComparatorFactory<T>=new NodeComparatorFactory<T>();
-
-        constructor(a: T, b: T, uniqueNameSelector: (x: T) => string, childrenSelector: (x: T) => T[], nodeComparatorFactory: INodeComparatorFactory<T>) {
-            super(a, b, uniqueNameSelector, childrenSelector);
-            this._nodeComparatorFactory = nodeComparatorFactory;
+        get NewOptions():TreeComparatorOptions<T>{return this.Options as TreeComparatorOptions<T>}
+        get NodeComparatorFactory(): INodeComparatorFactory<T>{return this.NewOptions.NodeComparatorFactory;}
+        get NodeProcessingCallback():(a:T,b:T)=>void {return this.NewOptions.NodeProcessingCallback;}
+        
+        constructor(options:TreeComparatorOptions<T>) {
+            super(options);
+            
         }
 
 
@@ -104,6 +123,7 @@
             return this.CompareCore(this.A, this.B);
         }
         public CompareCore(a: T, b: T): ComparisionResult {
+            this.NodeProcessingCallback(a,b);
             var comparator = this.CreateComparator(a, b);
             var result=comparator.Compare();
             if (result === ComparisionResult.Different) return ComparisionResult.Different;
@@ -138,7 +158,13 @@
         }
 
         private CreateComparator(a: T, b: T) {
-            return this._nodeComparatorFactory.Create(a, b, this.UniqueNameSelector, this.ChildrenSelector);
+            return this.NodeComparatorFactory.Create(new TreeComparatorOptionsBase<T>(<TreeComparatorOptionsBase<T>>{
+                A:a,
+                B:b,
+                UniqueNameSelector:this.UniqueNameSelector,
+                ChildrenSelector:this.ChildrenSelector
+                
+            }));
         }
 
         private CreateLookup(b: T) {
