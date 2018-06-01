@@ -18,13 +18,22 @@ module TreeComparatorTests {
     
     class TestHelper{
         static GetOrderInvarianComparator(a:TestNode, b:TestNode, nodeProcessingCallback:(a:TestNode,b:TestNode)=>void =()=>{}): TreeComparator<TestNode>{
-            return new TreeComparator<TestNode>(new TreeComparatorOptions<TestNode>(<TreeComparatorOptions<TestNode>>{
-                A:a,
-                B:b,
-                UniqueNameSelector:x => x.Id,
-                ChildrenSelector:x => x.Children,
-                NodeProcessingCallback:nodeProcessingCallback
-            }));
+            return new TreeComparator<TestNode>(this.GetOptions(a, b, nodeProcessingCallback));
+        }
+        static GetComparator(a:TestNode, b:TestNode, nodeProcessingCallback:(a:TestNode,b:TestNode)=>void =()=>{}): TreeComparator<TestNode>{
+            let treeComparatorOptions = this.GetOptions(a, b, nodeProcessingCallback);
+            treeComparatorOptions.OrderInvariant=false;
+            return new TreeComparator<TestNode>(treeComparatorOptions);
+        }
+
+        private static GetOptions(a: TestNode, b: TestNode, nodeProcessingCallback: (a: TestNode, b: TestNode) => void) {
+            return new TreeComparatorOptions<TestNode>(<TreeComparatorOptions<TestNode>>{
+                A: a,
+                B: b,
+                UniqueNameSelector: x => x.Id,
+                ChildrenSelector: x => x.Children,
+                NodeProcessingCallback: nodeProcessingCallback
+            });
         }
     }
     
@@ -78,6 +87,18 @@ module TreeComparatorTests {
             expect(true).toBe(true);
         });
 
+        it("Should_BeEquivalent_When_InDiffrentOrder", () => {
+            let a=new TestNode({Id:"1",Children:[new TestNode({Id:"1.1"}),new TestNode({Id:"1.2"})]});
+            let b=new TestNode({Id:"1",Children:[new TestNode({Id:"1.2"}),new TestNode({Id:"1.1"})]});
+            let sut=TestHelper.GetOrderInvarianComparator(a,b);
+
+            let result = sut.Compare();
+
+            should(result).be.exactly(ComparisionResult.Equivalent);
+
+            expect(true).toBe(true);
+        });
+
         it("Should_BeDifferent_When_ComparingNodesWithSameCountAndNOTMatchingChildren", () => {
             let a=new TestNode({Id:"1",Children:[new TestNode({Id:"1.1"}),new TestNode({Id:"1.2"})]});
             let b=new TestNode({Id:"1",Children:[new TestNode({Id:"1.1"}),new TestNode({Id:"1.3"})]});
@@ -109,10 +130,36 @@ module TreeComparatorTests {
         it("Should_Stop_WhenFirstDifferenceFound", () => {
             let a=new TestNode({Id:"1",Children:[new TestNode({Id:"1.1"}),new TestNode({Id:"1.2"})]});
             let b=new TestNode({Id:"1",Children:[new TestNode({Id:"1.2"}),new TestNode({Id:"1.3"})]});
-            
+            var processedNodes={};
             let sut=TestHelper.GetOrderInvarianComparator(a,b,(a,b)=>{
-                
+                processedNodes[a.Id]=true;
+                processedNodes[b.Id]=true;
             });
+
+            let result = sut.Compare();
+
+            should(result).be.exactly(ComparisionResult.Different);
+            should(processedNodes).be.deepEqual({
+                "1":true,
+                })
+
+            expect(true).toBe(true);
+        });
+        it("Should_IgnoreOrder_WhenInOrderInVariantMode", () => {
+            let a=new TestNode({Id:"1",Children:[new TestNode({Id:"1.1"}),new TestNode({Id:"1.2"})]});
+            let b=new TestNode({Id:"1",Children:[new TestNode({Id:"1.2"}),new TestNode({Id:"1.1"})]});
+            let sut=TestHelper.GetOrderInvarianComparator(a,b);
+
+            let result = sut.Compare();
+
+            should(result).be.exactly(ComparisionResult.Equivalent);
+
+            expect(true).toBe(true);
+        });
+        it("Should_BeDifferent_WhenInOrderVariantModeAndOrderDiffers", () => {
+            let a=new TestNode({Id:"1",Children:[new TestNode({Id:"1.1"}),new TestNode({Id:"1.2"})]});
+            let b=new TestNode({Id:"1",Children:[new TestNode({Id:"1.2"}),new TestNode({Id:"1.1"})]});
+            let sut=TestHelper.GetComparator(a,b);
 
             let result = sut.Compare();
 
@@ -120,7 +167,18 @@ module TreeComparatorTests {
 
             expect(true).toBe(true);
         });
-    
+
+        it("Should_BeEquivalent_WhenInOrderVariantModeAndOrderIsTheSame", () => {
+            let a=new TestNode({Id:"1",Children:[new TestNode({Id:"1.1"}),new TestNode({Id:"1.2"})]});
+            let b=new TestNode({Id:"1",Children:[new TestNode({Id:"1.2"}),new TestNode({Id:"1.1"})]});
+            let sut=TestHelper.GetOrderInvarianComparator(a,b);
+
+            let result = sut.Compare();
+
+            should(result).be.exactly(ComparisionResult.Equivalent);
+
+            expect(true).toBe(true);
+        });
 
     });
 }

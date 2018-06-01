@@ -3,7 +3,16 @@
         Compare(): ComparisionResult;
     }
     interface INodeLookup<T> {
-        [key: string]: T
+        [key: string]: NodeInfo<T>
+    }
+    
+    export class NodeInfo<T> {
+        constructor(i?:NodeInfo<T>){
+            if(i){
+                Object.assign(this,i)            }
+        }
+        Node:T;
+        Index:number;
     }
     class ComparisionPair<T> {
         constructor(public A: T, public B: T) { }
@@ -103,6 +112,7 @@
             }
             
         }
+        OrderInvariant:boolean=true;
         NodeComparatorFactory: INodeComparatorFactory<T>=new NodeComparatorFactory<T>();
         NodeProcessingCallback:(a:T,b:T)=>void=()=>{}
     }
@@ -143,16 +153,18 @@
                 Result:ComparisionResult.Different
             };
             var lookup: INodeLookup<T> = this.CreateLookup(b);
-            for (let child of this.ChildrenSelector(a)) {
-                var matchingChild = lookup[this.UniqueNameSelector(child)];
-                if (matchingChild) {
-                    result.ComparisionPairs.push(new ComparisionPair<T>(child, matchingChild))
+            var children=this.ChildrenSelector(a);
+            for (let i=0;i<children.length;i++){
+                var childInfo=new NodeInfo<T>(<NodeInfo<T>>{Node:children[i],Index:i});
+                var matchingChildInfo = lookup[this.UniqueNameSelector(childInfo.Node)];
+                if (matchingChildInfo  && this.OrderMatch(childInfo.Index,matchingChildInfo.Index)) {
+                    result.ComparisionPairs.push(new ComparisionPair<T>(childInfo.Node, matchingChildInfo.Node))
                 }
                 else {
                     result.ComparisionPairs.length=0;
                     return result;
                 }
-            }
+            } 
             result.Result=ComparisionResult.Equivalent;
             return result;
         }
@@ -169,8 +181,14 @@
 
         private CreateLookup(b: T) {
             var lookup: INodeLookup<T> = {};
-            this.ChildrenSelector(b).forEach(x => lookup[this.UniqueNameSelector(x)] = x);
+            this.ChildrenSelector(b).forEach((x,index) => 
+                lookup[this.UniqueNameSelector(x)] = new NodeInfo<T>(<NodeInfo<T>>{Node:x,Index:index}));
             return lookup;
+        }
+
+        private OrderMatch(indexA: number, indexB: number) {
+            if(this.NewOptions.OrderInvariant) return true;
+            return indexA===indexB;
         }
     }
     
