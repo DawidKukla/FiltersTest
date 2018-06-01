@@ -117,13 +117,12 @@
         <e p="Global.asax" t="Include" />
         <e p="Global.asax.cs" t="Include" />
         <e p="global.d.ts" t="Include" />
-        <e p="index.js" t="Include" />
-        <e p="Index.ts" t="Include" />
         <e p="Manual.js" t="Include" />
         <e p="Manual.ts" t="Include" />
-        <e p="MockService.js" t="Include" />
         <e p="obj" t="ExcludeRecursive" />
         <e p="packages.config" t="Include" />
+        <e p="Performance.js" t="Include" />
+        <e p="Performance.ts" t="Include" />
         <e p="Properties" t="Include">
           <e p="AssemblyInfo.cs" t="Include" />
         </e>
@@ -213,9 +212,9 @@
         <e p="tsconfig.json" t="Include" />
         <e p="Views" t="Include">
           <e p="default" t="Include">
-            <e p="Index.cshtml" t="Include" />
             <e p="index.js" t="Include" />
             <e p="Manual.cshtml" t="Include" />
+            <e p="Performance.cshtml" t="Include" />
             <e p="TestTree.cshtml" t="Include" />
           </e>
           <e p="Shared" t="Include">

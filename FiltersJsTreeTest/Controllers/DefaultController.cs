@@ -5,7 +5,7 @@ namespace FiltersJsTreeTest.Controllers
     public class DefaultController : Controller
     {
         // GET: Default
-        public ActionResult Index()
+        public ActionResult Performance()
         {
             return View();
         }

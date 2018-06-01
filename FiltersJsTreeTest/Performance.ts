@@ -1,8 +1,8 @@
-﻿namespace Index {
+﻿namespace PerformanceModule {
     import RandomTreeGenerator = RandomTreeGeneratorModule.RandomTreeGenerator;
 
 
-    export class Index {
+    export class PerformancePage {
         private _generator: RandomTreeGenerator;
         private _data:Array<Object>;
         constructor() {
@@ -28,11 +28,11 @@
         }
 
         private GenerateData() {
-            this._data = this._generator.GetRandomNodes($("#numberOfNodes").val());
+           this._data = this._generator.GetRandomNodes($("#numberOfNodes").val());
             console.log(this._data);
         }
         private GenerateFlatData() {
-            this._data = this._generator.GenerateFlatDataCore($("#numberOfNodes").val());
+           this._data = this._generator.GenerateFlatDataCore($("#numberOfNodes").val());
             console.log(this._data);
         }
 
@@ -41,5 +41,5 @@
     }
 }
 
-var index = new Index.Index();
+var index = new PerformanceModule.PerformancePage();
 index.Init();

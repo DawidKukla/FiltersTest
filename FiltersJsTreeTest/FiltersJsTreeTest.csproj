@@ -251,7 +251,7 @@
   <ItemGroup>
     <Content Include="Views\web.config" />
     <None Include="packages.config" />
-    <Content Include="Views\Default\Index.cshtml" />
+    <Content Include="Views\Default\Performance.cshtml" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
     <Content Include="tsconfig.json" />
@@ -295,7 +295,7 @@
     <TypeScriptCompile Include="TestPage.ts" />
     <TypeScriptCompile Include="FilterControl\JS\FilterControl.ts" />
     <TypeScriptCompile Include="RandomTreeGenerator.ts" />
-    <TypeScriptCompile Include="Index.ts" />
+    <TypeScriptCompile Include="Performance.ts" />
     <TypeScriptCompile Include="Scripts\typings\jquery\jquery.d.ts" />
   </ItemGroup>
   <ItemGroup>
