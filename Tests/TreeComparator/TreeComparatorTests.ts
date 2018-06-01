@@ -10,11 +10,10 @@ module TreeComparatorTests {
         Children?: TestNode[];
     }
     class TestNode implements ITestNode {
-        public Id:string;
-        public Children: TestNode[]=[];
-        constructor(i:ITestNode){
-            Object.assign(this,i)
-        }}
+        public Id: string;
+        public Children: TestNode[] = [];
+        constructor(i?:ITestNode){if(i){Object.assign(this,i)}}
+    }
     
     class TestHelper{
         static GetOrderInvarianComparator(a:TestNode, b:TestNode, nodeProcessingCallback:(a:TestNode,b:TestNode)=>void =()=>{}): TreeComparator<TestNode>{
