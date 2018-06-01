@@ -10,7 +10,7 @@ export interface ITest{
     GetData():number;
 }
  
-describe("Test Suite", () => {
+describe("JavaScriptTests", () => {
     var a; 
 
     it("Example", () => {

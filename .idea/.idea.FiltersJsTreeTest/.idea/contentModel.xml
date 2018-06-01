@@ -270,6 +270,9 @@
         <e p="ExampleTests.ts" t="Include" />
         <e p="obj" t="ExcludeRecursive" />
         <e p="Tests.csproj" t="IncludeRecursive" />
+        <e p="TreeComparator" t="Include">
+          <e p="TreeComparatorTests.ts" t="Include" />
+        </e>
         <e p="tsconfig.json" t="Include" />
         <e p="web.config" t="Include" />
         <e p="Web.Debug.config" t="Include" />
