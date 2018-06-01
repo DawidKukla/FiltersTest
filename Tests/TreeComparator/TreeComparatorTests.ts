@@ -4,7 +4,6 @@
 module TreeComparatorTests {
     import TreeComparator = Comarch.Utils.TreeComparator.TreeComparator;
     import ComparisionResult = Comarch.Utils.TreeComparator.ComparisionResult;
-    import NodeComparatorFactory = Comarch.Utils.TreeComparator.NodeComparatorFactory;
     import TreeComparatorOptions = Comarch.Utils.TreeComparator.TreeComparatorOptions;
     interface ITestNode {
         Id: any;
@@ -18,81 +17,108 @@ module TreeComparatorTests {
         }}
     
     class TestHelper{
-        static GetOrderInvarianComparator(a:TestNode,b:TestNode):TreeComparator<TestNode>{
+        static GetOrderInvarianComparator(a:TestNode, b:TestNode, nodeProcessingCallback:(a:TestNode,b:TestNode)=>void =()=>{}): TreeComparator<TestNode>{
             return new TreeComparator<TestNode>(new TreeComparatorOptions<TestNode>(<TreeComparatorOptions<TestNode>>{
                 A:a,
                 B:b,
                 UniqueNameSelector:x => x.Id,
-                ChildrenSelector:x => x.Children
+                ChildrenSelector:x => x.Children,
+                NodeProcessingCallback:nodeProcessingCallback
             }));
         }
     }
     
     describe("TreeComparatorTests", () => {
         
-        it("ShouldBeEquivalent_When_ComparingSingleMatchingNodes", () => {
+        it("Should_BeEquivalent_When_ComparingSingleMatchingNodes", () => {
             let a=new TestNode({Id:"1"});
             let b=new TestNode({Id:"1"});
             let sut=TestHelper.GetOrderInvarianComparator(a,b);
             
             let result = sut.Compare();
             
-            expect(result).toBe(ComparisionResult.Equivalent);
+            should(result).be.exactly(ComparisionResult.Equivalent);
+            
+            expect(true).toBe(true);
         });
 
-        it("ShouldBeDifferent_When_ComparingSingleNOTMatchingNodes", () => {
+        it("Should_BeDifferent_When_ComparingSingleNOTMatchingNodes", () => {
             let a=new TestNode({Id:"1"});
             let b=new TestNode({Id:"2"});
             let sut=TestHelper.GetOrderInvarianComparator(a,b);
 
             let result = sut.Compare();
 
-            expect(result).toBe(ComparisionResult.Different);
+            should(result).be.exactly(ComparisionResult.Different);
+
+            expect(true).toBe(true);
         });
 
-        it("ShouldBeDifferent_When_ComparingNodesWithNOTMatchingChildrenCount", () => {
+        it("Should_BeDifferent_When_ComparingNodesWithNOTMatchingChildrenCount", () => {
             let a=new TestNode({Id:"1",Children:[new TestNode({Id:"1.1"}),new TestNode({Id:"1.2"})]});
             let b=new TestNode({Id:"1",Children:[new TestNode({Id:"1.1"})]});
             let sut=TestHelper.GetOrderInvarianComparator(a,b);
 
             let result = sut.Compare();
 
-            expect(result).toBe(ComparisionResult.Different);
+            should(result).be.exactly(ComparisionResult.Different);
+
+            expect(true).toBe(true);
         });
 
-        it("ShouldBeEquivalent_When_ComparingNodesWithSameCountAndMatchingChildren", () => {
+        it("Should_BeEquivalent_When_ComparingNodesWithSameCountAndMatchingChildren", () => {
             let a=new TestNode({Id:"1",Children:[new TestNode({Id:"1.1"}),new TestNode({Id:"1.2"})]});
             let b=new TestNode({Id:"1",Children:[new TestNode({Id:"1.1"}),new TestNode({Id:"1.2"})]});
             let sut=TestHelper.GetOrderInvarianComparator(a,b);
 
             let result = sut.Compare();
 
-            expect(result).toBe(ComparisionResult.Equivalent);
+            should(result).be.exactly(ComparisionResult.Equivalent);
+
+            expect(true).toBe(true);
         });
 
-        it("ShouldBeDifferent_When_ComparingNodesWithSameCountAndNOTMatchingChildren", () => {
+        it("Should_BeDifferent_When_ComparingNodesWithSameCountAndNOTMatchingChildren", () => {
             let a=new TestNode({Id:"1",Children:[new TestNode({Id:"1.1"}),new TestNode({Id:"1.2"})]});
             let b=new TestNode({Id:"1",Children:[new TestNode({Id:"1.1"}),new TestNode({Id:"1.3"})]});
             let sut=TestHelper.GetOrderInvarianComparator(a,b);
 
             let result = sut.Compare();
 
-            expect(result).toBe(ComparisionResult.Different);
+            should(result).be.exactly(ComparisionResult.Different);
+
+            expect(true).toBe(true);
         });
-        it("ShouldWork_When_MultipleLevelRecursion", () => {
+        it("Should_Work_When_MultipleLevelRecursion", () => {
             let a=new TestNode({Id:"1",Children:[new TestNode({Id:"1.1",Children:[new TestNode({Id:"1.1.1"}),new TestNode({Id:"1.1.2"})]}),new TestNode({Id:"1.2",Children:[new TestNode({Id:"1.2.1"}),new TestNode({Id:"1.2.2"})]})]});
             let b=new TestNode({Id:"1",Children:[new TestNode({Id:"1.1",Children:[new TestNode({Id:"1.1.1"}),new TestNode({Id:"1.1.2"})]}),new TestNode({Id:"1.2",Children:[new TestNode({Id:"1.2.1"}),new TestNode({Id:"1.2.2"})]})]});
             let sut=TestHelper.GetOrderInvarianComparator(a,b);
             
             let result = sut.Compare();
-            
-            expect(result).toBe(ComparisionResult.Equivalent);
+
+            should(result).be.exactly(ComparisionResult.Equivalent);
             
             b.Children[0].Children[0].Id="100";
                         
             result = sut.Compare();
+            should(result).be.exactly(ComparisionResult.Different)
+
+            expect(true).toBe(true);
+        });
+
+        it("Should_Stop_WhenFirstDifferenceFound", () => {
+            let a=new TestNode({Id:"1",Children:[new TestNode({Id:"1.1"}),new TestNode({Id:"1.2"})]});
+            let b=new TestNode({Id:"1",Children:[new TestNode({Id:"1.2"}),new TestNode({Id:"1.3"})]});
             
-            expect(result).toBe(ComparisionResult.Different);
+            let sut=TestHelper.GetOrderInvarianComparator(a,b,(a,b)=>{
+                
+            });
+
+            let result = sut.Compare();
+
+            should(result).be.exactly(ComparisionResult.Different);
+
+            expect(true).toBe(true);
         });
     
 

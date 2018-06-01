@@ -6,31 +6,37 @@
 import * as Mock from "typemoq";
 import RandomTreeGenerator=RandomTreeGeneratorModule.RandomTreeGenerator;
 
-export interface ITest{
-    GetData():number;
+
+module ExampleTests{
+    export interface ITest{
+        GetData():number;
+    }
+    describe("ExampleTests", () => {
+        var a;
+
+        it("Example", () => {
+            a = true;
+            console.log("ABC")
+            should(a).be.exactly(true);
+            expect(true).toBe(true);
+        });
+
+        it("Mock", () => {
+            var mock=Mock.Mock.ofType<ITest>();
+            mock.setup(x => x.GetData()).returns(() => 100);
+            should(mock.target.GetData()).be.exactly(100);
+            expect(true).toBe(true);
+        });
+
+        it("ReferenceExternal", () => {
+            var generator=new RandomTreeGenerator()
+            var nodes= generator.GenerateFlatDataCore(10);
+            should(nodes.length).be.exactly(10);
+            expect(true).toBe(true);
+        });
+
+    });
 }
  
-describe("JavaScriptTests", () => {
-    var a; 
 
-    it("Example", () => {
-        a = true;
-        console.log("ABC")
-        expect(a).toBe(true);
-    });
-
-    it("Mock", () => {
-        var mock=Mock.Mock.ofType<ITest>();
-        mock.setup(x => x.GetData()).returns(() => 100);
-        expect(mock.target.GetData()).toBe(100);
-    });
-    
-    it("ReferenceExternal", () => {
-        var generator=new RandomTreeGenerator()
-        var nodes= generator.GenerateFlatDataCore(10);
-        expect(nodes.length).toBe(10);
-        
-    });
-
-});
 

@@ -265,6 +265,8 @@
         </e>
         <e p="Architecture" t="Include">
           <e p="Object.Assign.Polyfill.js" t="Include" />
+          <e p="should.d.ts" t="Include" />
+          <e p="should.js" t="Include" />
           <e p="TestsHarness.html" t="Include" />
           <e p="typemoq.d.ts" t="Include" />
         </e>
