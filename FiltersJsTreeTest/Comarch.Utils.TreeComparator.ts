@@ -93,6 +93,7 @@
             var comparator=this.CreateComparator(a, b);
             if (comparator.Compare()===ComparisionResult.Different) return ComparisionResult.Different;
             var lookup:INodeLookup<T>=this.CreateLookup(b);
+            var different=false;
             var comparisionPairs:ComparisionPair<T>[]=[];
             for (let child of this.ChildrenSelector(a))  {
                 var matchingChild=lookup[this.UniqueNameSelector(child)];
@@ -100,11 +101,11 @@
                     comparisionPairs.push(new ComparisionPair<T>(child,matchingChild))
                 }
                 else {
-                    return ComparisionResult.Different;
+                    different=true;
                 }
             }
-            
-            
+                
+                
         }
 
 
