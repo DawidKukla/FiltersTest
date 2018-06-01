@@ -43,6 +43,8 @@
           <e p="WebApiConfig.cs" t="Include" />
         </e>
         <e p="Bin" t="ExcludeRecursive" />
+        <e p="Comarch.Utils.TreeComparator.js" t="Include" />
+        <e p="Comarch.Utils.TreeComparator.ts" t="Include" />
         <e p="Common.js" t="Include" />
         <e p="Content" t="Include">
           <e p="font-awesome.css" t="Include" />

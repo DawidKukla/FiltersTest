@@ -1,6 +1,7 @@
 ﻿
 ///<reference path="./_TypeScriptReferences/Areas/RandomTreeGenerator.ts"/>
 /*FOR TEST RUNNER TO ADD REFERENCES*/
+/*ALSO having index.ts in your project file breaks references*/
 
 import * as Mock from "typemoq";
 import RandomTreeGenerator=RandomTreeGeneratorModule.RandomTreeGenerator;
@@ -8,9 +9,9 @@ import RandomTreeGenerator=RandomTreeGeneratorModule.RandomTreeGenerator;
 export interface ITest{
     GetData():number;
 }
-
+ 
 describe("Test Suite", () => {
-    var a;
+    var a; 
 
     it("Example", () => {
         a = true;

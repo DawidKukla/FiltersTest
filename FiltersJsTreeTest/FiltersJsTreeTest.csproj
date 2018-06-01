@@ -171,6 +171,7 @@
     <Content Include="..\..\..\Main\Comarch BI Point\Comarch.BI.Point.WEB\assets\plugins\sffjs\stringformat-1.10.js">
       <Link>Scripts\Comarch\ssfjs\stringformat-1.10.js</Link>
     </Content>
+    <Content Include="Comarch.Utils.TreeComparator.ts" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="fonts\fontawesome-webfont.svg" />
