@@ -1,6 +1,6 @@
 ﻿
 
-///<reference path="../_TypeScriptReferences/Areas/Comarch.Utils.TreeComparator.ts"/>
+///<reference path="../__TypeScriptReferences/Comarch.Utils.TreeComparator.ts"/>
 module TreeComparatorTests {
     import TreeComparator = Comarch.Utils.TreeComparator.TreeComparator;
     import ComparisionResult = Comarch.Utils.TreeComparator.ComparisionResult;

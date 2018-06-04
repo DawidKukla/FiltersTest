@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="RIDER_MODULE" version="4">
   <component name="NewModuleRootManager">
-    <content url="file://$USER_HOME$/Main/Comarch BI Point/Comarch.BI.Point.WEB/assets/DevExtreme_css/dx.common.css" />
-    <content url="file://$USER_HOME$/Main/Comarch BI Point/Comarch.BI.Point.WEB/assets/DevExtreme_css/dx.light.css" />
-    <content url="file://$USER_HOME$/Main/Comarch BI Point/Comarch.BI.Point.WEB/assets/DevExtreme_css/generic.light.custom.css" />
-    <content url="file://$USER_HOME$/Main/Comarch BI Point/Comarch.BI.Point.WEB/assets/DevExtreme_css/icons/dxicons.ttf" />
-    <content url="file://$USER_HOME$/Main/Comarch BI Point/Comarch.BI.Point.WEB/assets/DevExtreme_css/icons/dxicons.woff" />
-    <content url="file://$USER_HOME$/Main/Comarch BI Point/Comarch.BI.Point.WEB/assets/DevExtreme_css/icons/dxiconsios.ttf" />
-    <content url="file://$USER_HOME$/Main/Comarch BI Point/Comarch.BI.Point.WEB/assets/DevExtreme_css/icons/dxiconsios.woff" />
-    <content url="file://$USER_HOME$/Main/Comarch BI Point/Comarch.BI.Point.WEB/assets/js/Utils/TreeHelpers.ts" />
-    <content url="file://$USER_HOME$/Main/Comarch BI Point/Comarch.BI.Point.WEB/assets/plugins/collections/collections.js" />
-    <content url="file://$USER_HOME$/Main/Comarch BI Point/Comarch.BI.Point.WEB/assets/plugins/collections/collections.ts" />
-    <content url="file://$USER_HOME$/Main/Comarch BI Point/Comarch.BI.Point.WEB/assets/plugins/jstree/jstree.d.ts" />
-    <content url="file://$USER_HOME$/Main/Comarch BI Point/Comarch.BI.Point.WEB/assets/plugins/jstree/jstree.js" />
-    <content url="file://$USER_HOME$/Main/Comarch BI Point/Comarch.BI.Point.WEB/assets/plugins/jstree/themes/comarch-dark/32px.png" />
-    <content url="file://$USER_HOME$/Main/Comarch BI Point/Comarch.BI.Point.WEB/assets/plugins/jstree/themes/comarch-dark/40px.png" />
-    <content url="file://$USER_HOME$/Main/Comarch BI Point/Comarch.BI.Point.WEB/assets/plugins/jstree/themes/comarch-dark/style.css" />
-    <content url="file://$USER_HOME$/Main/Comarch BI Point/Comarch.BI.Point.WEB/assets/plugins/jstree/themes/comarch-dark/style.less" />
-    <content url="file://$USER_HOME$/Main/Comarch BI Point/Comarch.BI.Point.WEB/assets/plugins/jstree/themes/comarch-dark/throbber.gif" />
-    <content url="file://$USER_HOME$/Main/Comarch BI Point/Comarch.BI.Point.WEB/assets/plugins/jstree/themes/comarch-dark/throbber.svg" />
-    <content url="file://$USER_HOME$/Main/Comarch BI Point/Comarch.BI.Point.WEB/assets/plugins/sffjs/cultures/stringformat.de-DE.js" />
-    <content url="file://$USER_HOME$/Main/Comarch BI Point/Comarch.BI.Point.WEB/assets/plugins/sffjs/cultures/stringformat.en-US.js" />
-    <content url="file://$USER_HOME$/Main/Comarch BI Point/Comarch.BI.Point.WEB/assets/plugins/sffjs/cultures/stringformat.en.js" />
-    <content url="file://$USER_HOME$/Main/Comarch BI Point/Comarch.BI.Point.WEB/assets/plugins/sffjs/cultures/stringformat.fr-FR.js" />
-    <content url="file://$USER_HOME$/Main/Comarch BI Point/Comarch.BI.Point.WEB/assets/plugins/sffjs/cultures/stringformat.fr.js" />
-    <content url="file://$USER_HOME$/Main/Comarch BI Point/Comarch.BI.Point.WEB/assets/plugins/sffjs/cultures/stringformat.pl-PL.js" />
-    <content url="file://$USER_HOME$/Main/Comarch BI Point/Comarch.BI.Point.WEB/assets/plugins/sffjs/stringformat-1.10.js" />
+    <content url="file://$MODULE_DIR$/../../../../Main/Comarch BI Point/Comarch.BI.Point.WEB/assets/DevExtreme_css/dx.common.css" />
+    <content url="file://$MODULE_DIR$/../../../../Main/Comarch BI Point/Comarch.BI.Point.WEB/assets/DevExtreme_css/dx.light.css" />
+    <content url="file://$MODULE_DIR$/../../../../Main/Comarch BI Point/Comarch.BI.Point.WEB/assets/DevExtreme_css/generic.light.custom.css" />
+    <content url="file://$MODULE_DIR$/../../../../Main/Comarch BI Point/Comarch.BI.Point.WEB/assets/DevExtreme_css/icons/dxicons.ttf" />
+    <content url="file://$MODULE_DIR$/../../../../Main/Comarch BI Point/Comarch.BI.Point.WEB/assets/DevExtreme_css/icons/dxicons.woff" />
+    <content url="file://$MODULE_DIR$/../../../../Main/Comarch BI Point/Comarch.BI.Point.WEB/assets/DevExtreme_css/icons/dxiconsios.ttf" />
+    <content url="file://$MODULE_DIR$/../../../../Main/Comarch BI Point/Comarch.BI.Point.WEB/assets/DevExtreme_css/icons/dxiconsios.woff" />
+    <content url="file://$MODULE_DIR$/../../../../Main/Comarch BI Point/Comarch.BI.Point.WEB/assets/js/Utils/TreeHelpers.ts" />
+    <content url="file://$MODULE_DIR$/../../../../Main/Comarch BI Point/Comarch.BI.Point.WEB/assets/plugins/collections/collections.js" />
+    <content url="file://$MODULE_DIR$/../../../../Main/Comarch BI Point/Comarch.BI.Point.WEB/assets/plugins/collections/collections.ts" />
+    <content url="file://$MODULE_DIR$/../../../../Main/Comarch BI Point/Comarch.BI.Point.WEB/assets/plugins/jstree/jstree.d.ts" />
+    <content url="file://$MODULE_DIR$/../../../../Main/Comarch BI Point/Comarch.BI.Point.WEB/assets/plugins/jstree/jstree.js" />
+    <content url="file://$MODULE_DIR$/../../../../Main/Comarch BI Point/Comarch.BI.Point.WEB/assets/plugins/jstree/themes/comarch-dark/32px.png" />
+    <content url="file://$MODULE_DIR$/../../../../Main/Comarch BI Point/Comarch.BI.Point.WEB/assets/plugins/jstree/themes/comarch-dark/40px.png" />
+    <content url="file://$MODULE_DIR$/../../../../Main/Comarch BI Point/Comarch.BI.Point.WEB/assets/plugins/jstree/themes/comarch-dark/style.css" />
+    <content url="file://$MODULE_DIR$/../../../../Main/Comarch BI Point/Comarch.BI.Point.WEB/assets/plugins/jstree/themes/comarch-dark/style.less" />
+    <content url="file://$MODULE_DIR$/../../../../Main/Comarch BI Point/Comarch.BI.Point.WEB/assets/plugins/jstree/themes/comarch-dark/throbber.gif" />
+    <content url="file://$MODULE_DIR$/../../../../Main/Comarch BI Point/Comarch.BI.Point.WEB/assets/plugins/jstree/themes/comarch-dark/throbber.svg" />
+    <content url="file://$MODULE_DIR$/../../../../Main/Comarch BI Point/Comarch.BI.Point.WEB/assets/plugins/sffjs/cultures/stringformat.de-DE.js" />
+    <content url="file://$MODULE_DIR$/../../../../Main/Comarch BI Point/Comarch.BI.Point.WEB/assets/plugins/sffjs/cultures/stringformat.en-US.js" />
+    <content url="file://$MODULE_DIR$/../../../../Main/Comarch BI Point/Comarch.BI.Point.WEB/assets/plugins/sffjs/cultures/stringformat.en.js" />
+    <content url="file://$MODULE_DIR$/../../../../Main/Comarch BI Point/Comarch.BI.Point.WEB/assets/plugins/sffjs/cultures/stringformat.fr-FR.js" />
+    <content url="file://$MODULE_DIR$/../../../../Main/Comarch BI Point/Comarch.BI.Point.WEB/assets/plugins/sffjs/cultures/stringformat.fr.js" />
+    <content url="file://$MODULE_DIR$/../../../../Main/Comarch BI Point/Comarch.BI.Point.WEB/assets/plugins/sffjs/cultures/stringformat.pl-PL.js" />
+    <content url="file://$MODULE_DIR$/../../../../Main/Comarch BI Point/Comarch.BI.Point.WEB/assets/plugins/sffjs/stringformat-1.10.js" />
     <content url="file://$MODULE_DIR$/../.." />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>

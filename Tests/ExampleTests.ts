@@ -1,5 +1,5 @@
 ﻿
-///<reference path="./_TypeScriptReferences/Areas/RandomTreeGenerator.ts"/>
+///<reference path="./__TypeScriptReferences/RandomTreeGenerator.ts"/>
 /*FOR TEST RUNNER TO ADD REFERENCES*/
 /*ALSO having index.ts in your project file breaks references*/
 

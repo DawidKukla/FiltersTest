@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Admin\.Rider2018.1\System\resharper-host\local\Transient\ReSharperHost\v12\SolutionCaches\_FiltersJsTreeTest.-1923834671.00" t="ExcludeRecursive" />
     <e p="C:\Users\Admin\Main\Comarch BI Point\Comarch.BI.Point.WEB\assets\DevExtreme_css\dx.common.css" t="Include" />
     <e p="C:\Users\Admin\Main\Comarch BI Point\Comarch.BI.Point.WEB\assets\DevExtreme_css\dx.light.css" t="Include" />
     <e p="C:\Users\Admin\Main\Comarch BI Point\Comarch.BI.Point.WEB\assets\DevExtreme_css\generic.light.custom.css" t="Include" />
@@ -209,7 +208,6 @@
         </e>
         <e p="TestPage.js" t="Include" />
         <e p="TestPage.ts" t="Include" />
-        <e p="Tests" t="Include" />
         <e p="TestTree.js" t="Include" />
         <e p="TextWidthJQueryPlugin.js" t="Include" />
         <e p="tsconfig.json" t="Include" />
@@ -233,34 +231,32 @@
       <e p="packages" t="ExcludeRecursive" />
       <e p="Tests" t="IncludeRecursive">
         <e p="__TypeScriptReferences" t="Include">
-          <e p="Areas" t="Include">
-            <e p="FilterControl" t="Include">
-              <e p="js" t="Include">
-                <e p="FilterStateManager" t="Include" />
-                <e p="Helpers" t="Include" />
-                <e p="Service" t="Include" />
-              </e>
+          <e p="FilterControl" t="Include">
+            <e p="js" t="Include">
+              <e p="FilterStateManager" t="Include" />
+              <e p="Helpers" t="Include" />
+              <e p="Service" t="Include" />
             </e>
-            <e p="Scripts" t="Include">
-              <e p="Comarch" t="Include">
-                <e p="jstree" t="Include" />
-                <e p="sffjs" t="Include">
-                  <e p="cultures" t="Include" />
-                </e>
-                <e p="ssfjs" t="Include">
-                  <e p="cultures" t="Include" />
-                </e>
-              </e>
+          </e>
+          <e p="Scripts" t="Include">
+            <e p="Comarch" t="Include">
               <e p="jstree" t="Include" />
-              <e p="typings" t="Include">
-                <e p="jquery" t="Include" />
-                <e p="jstree" t="Include" />
-                <e p="linq" t="Include" />
+              <e p="sffjs" t="Include">
+                <e p="cultures" t="Include" />
+              </e>
+              <e p="ssfjs" t="Include">
+                <e p="cultures" t="Include" />
               </e>
             </e>
-            <e p="Views" t="Include">
-              <e p="default" t="Include" />
+            <e p="jstree" t="Include" />
+            <e p="typings" t="Include">
+              <e p="jquery" t="Include" />
+              <e p="jstree" t="Include" />
+              <e p="linq" t="Include" />
             </e>
+          </e>
+          <e p="Views" t="Include">
+            <e p="default" t="Include" />
           </e>
         </e>
         <e p="Architecture" t="Include">
@@ -272,7 +268,9 @@
         </e>
         <e p="Bin" t="ExcludeRecursive" />
         <e p="ExampleTests.ts" t="Include" />
-        <e p="obj" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include" />
+        </e>
         <e p="Tests.csproj" t="IncludeRecursive" />
         <e p="TreeComparator" t="Include">
           <e p="TreeComparatorTests.ts" t="Include" />
@@ -283,5 +281,6 @@
         <e p="Web.Release.config" t="Include" />
       </e>
     </e>
+    <e p="C:\Users\dawid.kukla\.Rider2018.1\System\resharper-host\local\Transient\ReSharperHost\v12\SolutionCaches\_FiltersJsTreeTest.-1923834671.00" t="ExcludeRecursive" />
   </component>
 </project>
